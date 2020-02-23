@@ -5,10 +5,12 @@ import pandas as pd
 
 class InstanceLogin:
     def __init__(self):
+        """Generate reddit instance"""
         self.reddit = Reddit(user_agent='Comment Extraction (by /u/sgdzhou5)',
                              client_id='zanmra52bp9GSg', client_secret='jrm-DL_IxEexh8WZbi1VduOmAFk')
 
     def extract_comment(self, forum):
+        """Harvest comment data from Reddit"""
         corpus = pd.DataFrame(columns=["Title", "Comments"])
         subreddit = self.reddit.subreddit(forum)
         for submission in subreddit.top('all'):
@@ -27,4 +29,4 @@ class InstanceLogin:
 
 
 corpus = InstanceLogin().extract_comment('IoT')
-corpus.to_csv("Corpus.csv")
+corpus.to_csv("Corpus.csv", index=False)
