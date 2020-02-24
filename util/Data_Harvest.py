@@ -9,11 +9,17 @@ class InstanceLogin:
         self.reddit = Reddit(user_agent='Comment Extraction (by /u/sgdzhou5)',
                              client_id='zanmra52bp9GSg', client_secret='jrm-DL_IxEexh8WZbi1VduOmAFk')
 
-    def extract_comment(self, forum):
+    def extract_comment(self, forum, filter):
         """Harvest comment data from Reddit"""
+        subreddit = ""
         corpus = pd.DataFrame(columns=["Title", "Comments"])
-        subreddit = self.reddit.subreddit(forum)
-        for submission in subreddit.top('all'):
+        if filter == "top":
+            subreddit = self.reddit.subreddit(forum).top('all')
+        elif filter == "new":
+            subreddit = self.reddit.subreddit(forum).new('all')
+        elif filter == "hot":
+            subreddit = self.reddit.subreddit(forum).hot('all')
+        for submission in subreddit:
             title = submission.title
             print(title)
             for top_level_comment in submission.comments:
@@ -28,5 +34,6 @@ class InstanceLogin:
         return corpus
 
 
-corpus = InstanceLogin().extract_comment('IoT')
-corpus.to_csv("Corpus.csv", index=False)
+for i in ["top", "hot", "new"]:
+    corpus = InstanceLogin().extract_comment('IoT', 'top')
+    corpus.to_csv("{}.csv".format(i), index=False)
