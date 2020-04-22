@@ -16,9 +16,9 @@ class InstanceLogin:
         if filter == "top":
             subreddit = self.reddit.subreddit(forum).top('all')
         elif filter == "new":
-            subreddit = self.reddit.subreddit(forum).new('all')
+            subreddit = self.reddit.subreddit(forum).new()
         elif filter == "hot":
-            subreddit = self.reddit.subreddit(forum).hot('all')
+            subreddit = self.reddit.subreddit(forum).hot()
         for submission in subreddit:
             title = submission.title
             print(title)
@@ -35,5 +35,5 @@ class InstanceLogin:
 
 
 for i in ["top", "hot", "new"]:
-    corpus = InstanceLogin().extract_comment('IoT', 'top')
+    corpus = InstanceLogin().extract_comment('IoT', i)
     corpus.to_csv("{}.csv".format(i), index=False)
