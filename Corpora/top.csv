@@ -31,21 +31,14 @@ I'm always wary of the toy use cases of IoT, like automatic lights and novelty t
 
 If you're looking for ideas for next videos, how about a video about the current big players in the IoT world and what they're up to? I'll admit I can't track the news of IoT very well, so I'm not even certain what is currently possible and available in terms of tech."
 IoTea #0: Top 5 IoT Use Cases for 2020,Last week I asked r/IOT about my YouTube video series idea. All your upvotes and comments inspired me to start making videos!! Episode 0 is a general overview of several IoT use cases. Future videos will delve into specific topics. Let me know what you want next!
-IoTea #0: Top 5 IoT Use Cases for 2020,I was looking forward to this! Thanks for coming through!
 IoTea #0: Top 5 IoT Use Cases for 2020,"I like it as an IoT Consultant, thank you!"
-IoTea #0: Top 5 IoT Use Cases for 2020,"Nice!!! You finally did it. I will definitely watch.
-
-Edit: subbed. Good job. When you mention the parts of the board, may be you can also visually highlight it in some way."
+IoTea #0: Top 5 IoT Use Cases for 2020,[deleted]
 IoTea #0: Top 5 IoT Use Cases for 2020,"Top use cases:
 1. Threat Monitoring - No Seriously ( just ask CIA and NSA xD )
 2. Automated Workflows and Daily
 3. Fun :P
 4. Fun xD"
-My 6 nodes Pi Cluster built in a ATX Tower,This is a Nether portal
-My 6 nodes Pi Cluster built in a ATX Tower,[deleted]
-My 6 nodes Pi Cluster built in a ATX Tower,Can you imagine a beowulf cluster of these? ;)
-My 6 nodes Pi Cluster built in a ATX Tower,Wanna help me out with an ELI5 for the usecase? :-)
-My 6 nodes Pi Cluster built in a ATX Tower,This is some /r/DiWHY material
+IoTea #0: Top 5 IoT Use Cases for 2020,Good to see the wadsworth constant still holds.
 FBI recommends that you keep your IoT devices on a separate network,If I’m reading this correctly this is the FBI warning against rogue IOT devices like a wifi speakers and the likes that might scan your network and attempt to compromise in some way.
 FBI recommends that you keep your IoT devices on a separate network,"Was just working on implementing a telnet server on a microcontroller, using a 4G modem with a public IP address so it could be contactable.
 
@@ -61,14 +54,28 @@ BUT, I still have no good grasp of how to set up a different subnet or the like 
 I guess this is what Apple tries to deal with by the “HomeKit-enabled routers”."
 FBI recommends that you keep your IoT devices on a separate network,I have a TON of devices on an apple time capsule.  I know nothing about VLAN and ports and stuff.  I have a second apple express wireless router.  Should I move all of my IOT devices to the extra router?
 Amazon engineer says Ring should be 'shut down immediately',[deleted]
-"Apple, Google, and Amazon create “CHIP,” a new smart home standard",Ain't buying it until it's open and compatible with home assistant.
-"Apple, Google, and Amazon create “CHIP,” a new smart home standard",https://xkcd.com/927/
-"The Internet of Trash: IoT Has a Looming E-Waste Problem - Before we hook up all of our everyday objects to the internet, we need to figure out how to properly get rid of them. A lack of forethought will leave us with a mountain of obsolete devices and no way to dispose of them.",In the future I imagine a third recycle bin for chips. 
-"The Internet of Trash: IoT Has a Looming E-Waste Problem - Before we hook up all of our everyday objects to the internet, we need to figure out how to properly get rid of them. A lack of forethought will leave us with a mountain of obsolete devices and no way to dispose of them.",Luckily there are many recycling facilities that are moving towards electronic recycling. I did a job at one and they purchased a machine that separated each component so almost everything could be reused. I looked through bins and found some cool things like a Commodore64 drive
-"The Internet of Trash: IoT Has a Looming E-Waste Problem - Before we hook up all of our everyday objects to the internet, we need to figure out how to properly get rid of them. A lack of forethought will leave us with a mountain of obsolete devices and no way to dispose of them.","Here in California, USA, electronic recycling is HUGE.  We have at least one event every weekend within 10 miles of me where you can take your electronics.  There is money in it, so I don't see it being a problem."
-"The Internet of Trash: IoT Has a Looming E-Waste Problem - Before we hook up all of our everyday objects to the internet, we need to figure out how to properly get rid of them. A lack of forethought will leave us with a mountain of obsolete devices and no way to dispose of them.",Completely agree. E-waste is a matter of grave concern in most developing nations. Lack of resources and knowledge is leading to the build-up of e-junkyard.
+My 6 nodes Pi Cluster built in a ATX Tower,This is a Nether portal
+My 6 nodes Pi Cluster built in a ATX Tower,[deleted]
+My 6 nodes Pi Cluster built in a ATX Tower,Can you imagine a beowulf cluster of these? ;)
+My 6 nodes Pi Cluster built in a ATX Tower,Wanna help me out with an ELI5 for the usecase? :-)
+My 6 nodes Pi Cluster built in a ATX Tower,This is some /r/DiWHY material
+Shocking 98% of USA’s IoT device traffic is unencrypted: study,"It's really not that shocking if you've worked in the IT industry for any amount of time.  
+
+
+If it weren't for Google using TLS encryption as an SEO ranking metric, we'd still have the majority of major websites in unencrypted traffic too.  
+
+
+Security and monitoring are always the things that are allowed to slip and fall off the roadmap, and I've never quite understood why, because ""This stuff is hard"" \*really\* isn't a good enough excuse anymore."
+Shocking 98% of USA’s IoT device traffic is unencrypted: study,"Encryption is computationally expensive for many IoT devices.
+
+&#x200B;
+
+Think about a sensor that checks humidity, or another that sends the temperature twice a day. These might be super tiny IoT devices which are optimized to use low power and send data long range. They might be surviving for 5 years on a tiny cell battery. Encryption means that have to encrypt their data and include that CRC in packet headers. LoRaWAN allows for packets of what, a little over 200 bytes? And encryption algorithms can be power intensive. Some stuff just doesnt need encryption."
+Shocking 98% of USA’s IoT device traffic is unencrypted: study,"That can be a problem of course, with camera, infrastructure and control equipment, and efforts should be made to remedy those situations. But the reality is the most IoT traffic does not need to be encrypted."
+Shocking 98% of USA’s IoT device traffic is unencrypted: study,So much of the IoT traffic goes to Chinese servers anyway.  They've just cut out the middleman.
+Shocking 98% of USA’s IoT device traffic is unencrypted: study,Is the info being bought and sold by third parties as well I wonder?
+Shocking 98% of USA’s IoT device traffic is unencrypted: study,This is pretty terrifying to hear when taken in context of the BlackIOT paper that describes how vulnerable our Power Grids are from IOT attacks.
 IoTea: YouTube channel idea,Would love to learn what you have learnt in 5 years. Please do start it.
-IoTea: YouTube channel idea,kinda cool idea
 IoTea: YouTube channel idea,"Sounds like a super interesting idea, a bit of a target audience but it would be a great way to increase IoT knowledge. I would certainly watch!"
 IoTea: YouTube channel idea,Yeah I'd like this!
 IoTea: YouTube channel idea,Do it
@@ -89,6 +96,12 @@ I thought episode 0 was appropriate because it won't be relating to a detailed I
 IoTea: YouTube channel idea,"Dude. Please!!!!! There's no IoT security channel on YouTube. It's Just that recently Ghidra Ninja uploaded an IoT reversing tutorial I've watched it like a 5 times now. I've worked on reversing IoT firmwares since last year and there's literally no resource on YouTube and I had to go through manuals and Defcon lectures to learn. YouTube needs more people like Ghidra Ninja! 
 
 I'll definitely support you!"
+"Apple, Google, and Amazon create “CHIP,” a new smart home standard",Ain't buying it until it's open and compatible with home assistant.
+"Apple, Google, and Amazon create “CHIP,” a new smart home standard",https://xkcd.com/927/
+"The Internet of Trash: IoT Has a Looming E-Waste Problem - Before we hook up all of our everyday objects to the internet, we need to figure out how to properly get rid of them. A lack of forethought will leave us with a mountain of obsolete devices and no way to dispose of them.",In the future I imagine a third recycle bin for chips. 
+"The Internet of Trash: IoT Has a Looming E-Waste Problem - Before we hook up all of our everyday objects to the internet, we need to figure out how to properly get rid of them. A lack of forethought will leave us with a mountain of obsolete devices and no way to dispose of them.",Luckily there are many recycling facilities that are moving towards electronic recycling. I did a job at one and they purchased a machine that separated each component so almost everything could be reused. I looked through bins and found some cool things like a Commodore64 drive
+"The Internet of Trash: IoT Has a Looming E-Waste Problem - Before we hook up all of our everyday objects to the internet, we need to figure out how to properly get rid of them. A lack of forethought will leave us with a mountain of obsolete devices and no way to dispose of them.","Here in California, USA, electronic recycling is HUGE.  We have at least one event every weekend within 10 miles of me where you can take your electronics.  There is money in it, so I don't see it being a problem."
+"The Internet of Trash: IoT Has a Looming E-Waste Problem - Before we hook up all of our everyday objects to the internet, we need to figure out how to properly get rid of them. A lack of forethought will leave us with a mountain of obsolete devices and no way to dispose of them.",Completely agree. E-waste is a matter of grave concern in most developing nations. Lack of resources and knowledge is leading to the build-up of e-junkyard.
 MQTT Explorer v0.3.5 is out,https://mqtt-explorer.com
 MQTT Explorer v0.3.5 is out,"OSS, multi-platform, mature/maintained... great piece of software!   Thx."
 MQTT Explorer v0.3.5 is out,Lovely!
@@ -97,12 +110,30 @@ Getting Started with LoRa Devices,"What is the actual distance you can send byte
 
 Thanks. :-)"
 Getting Started with LoRa Devices,I have been working on LoRaWAN for a month now and I want to implement FOTA on LoRaWAN is it possible any one tried it?
+"Without international standards, manufacturers will continue to release vulnerable IoT devices to the market.","Sounds like a very cool thesis and project. Building something similar to an oWASP vulnerability scanner  would be a great start since I recently read a Kaspersky report stating that most infected home IoT devices were the result of hackers casting a wide net  for well known vulnerabilities and not targeted attacks against specific individuals or organizations.   The only exception to that is that one of the researchers stated that a lot of the botnet will check the AS name and target only the IP being served to home users to take advantage of lax security protocol.
+https://securelist.com/iot-a-malware-story/94451/
+You can see from the report that most devices are compromised using variants of Mirai exploit.
+
+The presence of your open source vulnerability scanner would be able to identify these problem but then could also maybe build a database of products with their vulnerability that could be ""graded"" and shared with the public through a website kind of like Amazon metareview sites grade Amazon reviews for integrity. That is of course if users opt in to sharing anonymized data of their scan of their IoT products  Of course, this isn't exactly a standard like you suggested but it would act as a guide for consumers instead based on their needs.
+
+Also, what are your thoughts on other methods of mitigation for IoT devices such as using VLANs to wall off IoT devices to use only whitelisted external IPs or to work only on local internet through a local hub? A consumer variant of this strategy might be the ""works with Homekit"" routers that allow consumers to choose the type of access they want for each IoT device. 
+
+I'm sorry I don't have much to offer, but I'm interested in security and privacy in this space also. Sounds like a great project!"
+"Without international standards, manufacturers will continue to release vulnerable IoT devices to the market.","This is so much related to what I am recently working upon. Right now, I am away from desk but I will surely try to give my input as soon as I am back. Give me a day or two. 
+
+And yes, this is going to be a fantastic research topic for your thesis. 
+Good luck."
+"Without international standards, manufacturers will continue to release vulnerable IoT devices to the market.",FCC regulates them in the US. I believe every large ddos attack using iot devices could have been prevented by replacing default passwords.
+"Without international standards, manufacturers will continue to release vulnerable IoT devices to the market.",Any way a good it product should be PCI compliant. There are so many advantages actually. Still it is up to companies to decide. Mind that PCI Compliance Cost of the company depends on many factors [https://www.trustnetinc.com/pci-compliance-cost/](https://www.trustnetinc.com/pci-compliance-cost/) and they have to hire some professionals to handle the procedure
 Amazon and Apple are quietly building networks that know the location of everything,"They are not the first to do this.   Google has sent around cars to not only map every road, but also WiFi access points. They are assembled into a database. So all you need are you your neighbors’ WiFi AP entries and google can figure out where you are down to the house by looking up the access points in your vicinity.   When you do a find x near me, that’s what it’s looking at, if GPS is not available.   
 
 More recently, your bank may record your information to prevent fraudulent use of your credit card. 
 
 There’s no reason why google should be the only company that invests in this technology.  More and better location capabilities could enable new services."
 Amazon and Apple are quietly building networks that know the location of everything,r/StallmanWasRight
+When you IOT and your office is also your gym,"Do you live at altitude? Your normal indoor humidity is crazy low, well outside the comfortable region."
+When you IOT and your office is also your gym,I’d have similar spikes in my office. It’s where I steam iron shirts for work... and my video game room... and where I sometimes have sex... and I live in a studio apartment
+When you IOT and your office is also your gym,What are you using for the dashboard ?
 "Harold the Hamster, an IoT hamster","For those interested, here's a [full video](https://youtu.be/l9XZCoifg4A) of the project :)
 
 You can also follow Harold's runs real\-time via his ThingSpeak channel: [https://thingspeak.com/channels/345243](https://thingspeak.com/channels/345243)
@@ -113,11 +144,30 @@ Project files on GitHub: [https://github.com/NHorward/IoTHamsterWheel](https://g
 "Harold the Hamster, an IoT hamster","Apparently, Harold exercises more than I do. Did you intend for your project to serve as motivation? "
 "Harold the Hamster, an IoT hamster",Pretty cool!
 "Harold the Hamster, an IoT hamster",Nooooooo please tell me he didnt die :(
+I made my first IoT weather station using Arduino! It logs temperature and other measurements directly in Google spreadsheet and it works really great! 👍," How I did this project:
+
+[https://arduinoprojectsbyr.blogspot.com/2020/03/63-iot-weather-station-using-arduino.html](https://arduinoprojectsbyr.blogspot.com/2020/03/63-iot-weather-station-using-arduino.html)
+
+Original Project:
+
+[https://www.hackster.io/detox/transmit-esp8266-data-to-google-sheets-8fc617](https://www.hackster.io/detox/transmit-esp8266-data-to-google-sheets-8fc617)"
 "LoRaWAN® distance world record broken, twice. 766 km (476 miles) using 25mW transmission power","That's awesome , but what's the link budget at these distances , 1bit? 2bits? 
 
 Anything below 8 bits limits its practically, however the LoRaWan if it continues to expand will alleviate the link budget by having a receiver always closer to the transmitter"
 Building an IoT dashboard with NASA Open MCT,Awesome! I've been looking for this kind of solution for my project! they even have the tutorial page! i'll have a look thanks! +2 miota /u/iotaTipBot
 Building an IoT dashboard with NASA Open MCT,It is really an era of IoT to revolutionize technology solution. Looking forward to more related solution and what impact it provides to its users.
+Top IoT Trends For 2020,That's just noise.
+Top IoT Trends For 2020,"$72,000,000 thousands"
+Top IoT Trends For 2020,No.
+Top IoT Trends For 2020,"Smart cities and sensors have been growing areas for years which will continue into 2020.
+
+
+I don’t have enough experience to comment in the other areas.
+
+
+Nice graphic though."
+Top IoT Trends For 2020,"There is still blurring between AI & ML, but AI in surveillance is increasing and that is a part of IoT set of sensors / edge computing devices."
+Top IoT Trends For 2020,Starting to hate these graphical posters with buzzwords
 Micropython + MQTT + Android,"Hello this is an open source project that I have been developing, it is about devices made with esp8266 + Mqtt + Micropython. And a Hub-iot to adopt devices and controls, made in android. He is currently working with relays and temperature sensors.
 
 [https://github.com/andrequeiroz2/micropython-coffee](https://github.com/andrequeiroz2/micropython-coffee)
@@ -145,6 +195,19 @@ The hacking software is simple a set of usernames and passwords that have been c
 I was hoping this was an actual hack but more of a standard user error."
 Hacking Software for Breaking Into Ring Cameras Retail for $8 Online,It’s the FedEx conspiracy
 Build your own IoT Device Hub (Bluetooth + LoRaWAN),Brings together many aspects quickly and effectively. Very nicely done.
+Only leaving quarantine when my dog says we need to (Frame.IoT + IFTTT),"[Arduino sketch on Github](https://github.com/BuiltWithFrame/IoT/tree/master/examples/IFTTT)
+
+[More on the board](https://builtwithframe.com/)
+
+[Follow for go-live notifications on 3/24](https://www.kickstarter.com/projects/builtwithframe/frameiot-an-arduino-compatible-dev-kit-for-wi-fi-projects)"
+"I made an IoT Home Automation system using Arduino, NodeMCU DEVkit 1.0 and controlled it with my Google Home Mini! I can't believe that I've finally done something which I've dreamt of - for the past 5 months.","How I did this project:  
+[https://arduinoprojectsbyr.blogspot.com/2020/01/55-iot-home-automation-using-google.html](https://arduinoprojectsbyr.blogspot.com/2020/01/55-iot-home-automation-using-google.html)"
+"I made an IoT Home Automation system using Arduino, NodeMCU DEVkit 1.0 and controlled it with my Google Home Mini! I can't believe that I've finally done something which I've dreamt of - for the past 5 months.",Wow its amazing. Can you give more information. A video will b grest. Anyway congratulations dude. 💪💪
+"I made an IoT Home Automation system using Arduino, NodeMCU DEVkit 1.0 and controlled it with my Google Home Mini! I can't believe that I've finally done something which I've dreamt of - for the past 5 months.","very nice work. What are you automating (lights, locks, etc.) with this solution? 
+
+&#x200B;
+
+thanks for the how to."
 How we have built an IoT toilet load balancer.,Shit ehh? I could do with one of those at home!
 How we have built an IoT toilet load balancer.,Nice!
 Android TV update puts home-screen ads on multi-thousand-dollar Sony Smart TVs,"Remember people, buy a good panel and add your own ""smart"" options afterwards."
@@ -197,14 +260,6 @@ There are 15 competing standards.
 
 ---
 ^[xkcd.com](http://www.xkcd.com) ^| ^[xkcd sub](http://www.reddit.com/r/xkcd/) ^| ^[Problems/Bugs?](http://www.reddit.com/r/xkcd_transcriber/) ^| ^[Statistics](http://xkcdref.info/statistics/) ^| ^[Stop Replying](http://reddit.com/message/compose/?to=xkcd_transcriber&subject=ignore%20me&message=ignore%20me) ^| ^[Delete](http://reddit.com/message/compose/?to=xkcd_transcriber&subject=delete&message=delete%20t1_czejyj3)"
-"I made an IoT Home Automation system using Arduino, NodeMCU DEVkit 1.0 and controlled it with my Google Home Mini! I can't believe that I've finally done something which I've dreamt of - for the past 5 months.","How I did this project:  
-[https://arduinoprojectsbyr.blogspot.com/2020/01/55-iot-home-automation-using-google.html](https://arduinoprojectsbyr.blogspot.com/2020/01/55-iot-home-automation-using-google.html)"
-"I made an IoT Home Automation system using Arduino, NodeMCU DEVkit 1.0 and controlled it with my Google Home Mini! I can't believe that I've finally done something which I've dreamt of - for the past 5 months.",Wow its amazing. Can you give more information. A video will b grest. Anyway congratulations dude. 💪💪
-"I made an IoT Home Automation system using Arduino, NodeMCU DEVkit 1.0 and controlled it with my Google Home Mini! I can't believe that I've finally done something which I've dreamt of - for the past 5 months.","very nice work. What are you automating (lights, locks, etc.) with this solution? 
-
-&#x200B;
-
-thanks for the how to."
 WiFi Reservoir to Water Plants Automatically - Automatic Plant Feeder Monitors Cultivation Remotely,Cool stuff
 WiFi Reservoir to Water Plants Automatically - Automatic Plant Feeder Monitors Cultivation Remotely,"I thought these were pot plants at first. Bit disappointed now, but still very cool."
 Vendors must start adding physical on/off switches to devices that can spy on us,"IBM in some of their latops have a physical switch that turns  off and remove the camera from hardware so it cant be turned back on at a lower layer
@@ -250,6 +305,12 @@ I've also run it ""at scale"" for various monitoring platforms over the past 6 y
 
 Great blog post btw, and really glad to see someone else using Grafana for IoT stuff."
 How to Make an Amazing Looking Iot Dashboard in No Time,Looks great! Is it static or responsive?
+New Chip Brings Ultra-Low Power Wi-Fi Connectivity to IoT Devices,Is it available for sale?
+New Chip Brings Ultra-Low Power Wi-Fi Connectivity to IoT Devices,"Wow, that’s awesome.  Googling zigbee and BLE it seems they use 10-100 milliwatts, so this is order of magnitude less power than those?"
+New Chip Brings Ultra-Low Power Wi-Fi Connectivity to IoT Devices,Not coming for us(makers) anytime soon.
+New Chip Brings Ultra-Low Power Wi-Fi Connectivity to IoT Devices,"Also, one would assume that with backscatter, the chip has less control over timing, and it might create more noise in a real-world scenario than would otherwise be considered practical.
+
+However, very cool technology. Looking forward to testing it somewhere."
 Best Buy is stripping the smarts from Insignia smart home gadgets on Nov. 6th - The Verge,Another reminder not to buy in to proprietary cloud based products.
 Best Buy is stripping the smarts from Insignia smart home gadgets on Nov. 6th - The Verge,That sucks if you bought into it
 Best Buy is stripping the smarts from Insignia smart home gadgets on Nov. 6th - The Verge,"I have a couple of these switches, should have known this is why they were marked down to $10 a piece. They're claiming to still  work with Apple homekit, hoping they'll also work with Samsung but I'll be getting my gift cards anyways."
@@ -305,7 +366,7 @@ California just became the first state with an Internet of Things cybersecurity 
 "Full IoT Project: Raspberry Pi, Android App and reliable Back-end service",Thank you. Been looking for something like this. 
 "Full IoT Project: Raspberry Pi, Android App and reliable Back-end service",Thank you. I read your tutorial. If I might add I advise to eleborate on the instructions by using some kind of screenshot. Especially during the configuration part. Good tutorial. Please continue and keep us up to date on your next step in your project. Excellente.
 "Full IoT Project: Raspberry Pi, Android App and reliable Back-end service",Part 2 is now on! Now things are getting closer to the final product. The electronics on Raspberry can be controlled via events on Parse Server dashboard.
-LPSTK: a new IoT hardware platform from Texas Instruments,"I have this kit, seems like a great point to start a home project."
+Portable time-lapse camera using an ESP32-CAM running MicroPython,I really want to see other sketches for this esp32 variant. Would make a great ftp or other server due to the built in sd card.
 ESP32 IoT Devices Vulnerable to Forever-Hack,"If someone has physical access to your WiFi thermostat you've got bigger problems than this. Also, even tho this looks to require physical access to work, it's a good time to remind everyone that IoT devices should be locked up in restricted VLANs with no access to the internet. If it truly needs internet use some sort of gateway, MQTT or HTTP proxy or whatever, but do not put IoT devices directly on the internet."
 ESP32 IoT Devices Vulnerable to Forever-Hack,"The primary problem is not ""physical access"", but with this sentence:
 
@@ -317,7 +378,8 @@ This question in an Indian Government services entrance exam.,What is a geyser i
 This question in an Indian Government services entrance exam.,what is the point of a test like this?
 This question in an Indian Government services entrance exam.,"I'm sorry, the correct answer is C, none of the above.  [cisco test]
 "
-Portable time-lapse camera using an ESP32-CAM running MicroPython,I really want to see other sketches for this esp32 variant. Would make a great ftp or other server due to the built in sd card.
+The A to Z of Internet of Things (AWS),Great job!
+The A to Z of Internet of Things (AWS),T - Training lab https://aws.amazon.com/marketplace/pp/B084WZH8G5/
 Amazon develops longer-range wireless network for IoT devices,"900mhz? So, Z-Wave? Also, https://www.xkcd.com/927/"
 Amazon develops longer-range wireless network for IoT devices,"LOL. ""equivalent to Bluetooth and WiFi""   Bluetooth and Wi-Fi are nothing alike.    
    
@@ -356,6 +418,7 @@ If you have comments, whatch outs, tips, share them please. "
 IOT for manufacturing. Bypass the automation layer and count parts on a conveyour,"Is this just for you to get familiar with AWS's IoT stack or do you envision some practical use for this?
 
 Scanners (bar code, RFID, etc.) are ubiquitous in supply chain. If your rig could automatically determine via pic/video what's passing thru, that could have some value. "
+"Creating an IoT CI/CD pipeline with Docker, Jenkins and Ansible",nice
 Control your devices Remotely via voice and app with the Fingerbot from Adaprox,"That's not going to pass any Significant Other tests.  No one's going to want stuff stuck on the bottom of a switch.
 
 Neat concept tho."
@@ -398,6 +461,13 @@ What languages do you use for IoT development? What languages would you like to 
 "Internet of Things Technology Will Connect Highways, Street Lights, and Vehicles",HOLMES DOES IT AGAIN!
 "Internet of Things Technology Will Connect Highways, Street Lights, and Vehicles", It will take time to bring this development
 "Internet of Things Technology Will Connect Highways, Street Lights, and Vehicles",Vehicles and street lights are already connected and many smart cities have applied this technology.
+Top 15 Standard IoT Protocols That You Must Know About,Looking forward to seeing what comes from project CHIP
+Top 15 Standard IoT Protocols That You Must Know About,Great find.  Thanks.
+How to receive and process GPS location data on your own webserver without any cost !!,What’s wrong with PHP?
+How to receive and process GPS location data on your own webserver without any cost !!,Ughh why php
+"We built a wireless hand wash sensor to help us keep washing our hands for a full 20 seconds, and to keep the habit going",Reading while tired Incase I missed it. Why is data being stored at all? Is this to give data on how clean a set of occupants truly are so they know to further encourage proper cleaning or know it’s taken care of and move on to another project?
+"We built a wireless hand wash sensor to help us keep washing our hands for a full 20 seconds, and to keep the habit going","Amazing, atleast with the outbreak of this virus, we will be inculcating good habits , like washing hands!"
+"We built a wireless hand wash sensor to help us keep washing our hands for a full 20 seconds, and to keep the habit going","Just wash them for 20sec. We don't need to overcomplicated everything in this world, simplicity is good"
 RFC 8576 - Internet of Things (IoT) Security: State of the Art and Challenges,"If you haven’t read this one yet, it’s a good one to read for an understanding of just how difficult security is for IOTs."
 RFC 8576 - Internet of Things (IoT) Security: State of the Art and Challenges,"Thanks, OP 👍"
 Sony built an IoT chip with a 60 mile range,So have many other companies. I commonly use the quextel bc95. That kind of range is not unusual for NB-IoT in ideal test conditions.
@@ -542,46 +612,3 @@ Performance versus cost is pretty good with LoRa. Module cost is often considere
 
 Hope this helps. I could write a lot more on this, but it might make this post a bit too long...
 For those who just start with LoRaWAN but have trouble filtering the noise, [I wrote some of the basics down here](http://www.purplealienplanet.com/node/65)."
-"This is ridiculous - No content, just Business blather",Couldn't agree more.
-"This is ridiculous - No content, just Business blather","I completely agree (except that apart from DIY I'd also be very interested in commercial development related posts).
-
-However complaining won't change anything. 
-
-How about this: those who reply in this thread pledge to post some content they feel is valuable over the course of this week.
-
-I'll get started tomorrow morning. 
-
-Let's see if we can get the ball rolling to shape this subreddit into something we perceive to be more valuable. 
-
-Thinking about it, I'd also be happy about well-posed questions, bit just content-based posts. "
-"This is ridiculous - No content, just Business blather","Like you, I've noticed that platform specific subs are much better. /r/amazonecho, /r/raspberry_pi, etc."
-"This is ridiculous - No content, just Business blather","well there was one conversation here https://www.reddit.com/r/iotdev/
-one."
-"This is ridiculous - No content, just Business blather",Yeah it's unfortunate.   Everyone is getting on the same bandwagon 
-"This is ridiculous - No content, just Business blather","I think you are exaggerating a bit. There are a few good articles every week, but I wish there were a lot more. It would be nice if the mods stepped up and helped out. 
-
- From my perspective, I am less interested in the DIY and maker stuff and more interested in industry trends and standards. I too will try and contribute more."
-"Controlling gadgets with Google Home, IFTTT and Node-RED","Node-RED's so underrated. There's tons of other custom flows on their website (https://flows.nodered.org). If there's a DIY setup you're thinking about, it's probably already on there."
-"Controlling gadgets with Google Home, IFTTT and Node-RED","This looks nice, altough I have on gripe with the article... it says "" In short, it provides an encrypted, one-way transport to your Node-RED through a single node. And we do have a free tier. ""... too bad the free tier is HTTP only (unencrypted) which you only find out after reading the fine print ;("
-"Controlling gadgets with Google Home, IFTTT and Node-RED",[https://iot4beginners.com/what-is-node-red/](https://iot4beginners.com/what-is-node-red/)
-New IoT E-book (all proceeds to help families with Autism),Thanks for sharing!
-New IoT E-book (all proceeds to help families with Autism),Thanks!
-New IoT E-book (all proceeds to help families with Autism),"Hi guys, You can also consider this case study https://aware360.com/case-study/providing-early-seizure-warnings-living-epilepsy/ to get early warnings with epilepsy."
-Mozilla Unveils Project Things; Aims to Create Open Standard for IoT Devices,Relevant xkcd https://xkcd.com/927/
-Mozilla Unveils Project Things; Aims to Create Open Standard for IoT Devices,This simply just increases the noise by adding another standard and doesn't do much to address commercial IIot devices or embedded devices
-Just wondering if there would be interest in an IoT discord chat community? IoT is very fragmented but I bet we could figure out a way to set up channels for all facets of IoT.,"I mean, it might have only three messages a day, but by all means do it. 
-
-$20 says there’s 100 other IOT discord/slack/IRC channels out there. "
-Just wondering if there would be interest in an IoT discord chat community? IoT is very fragmented but I bet we could figure out a way to set up channels for all facets of IoT., I'd be down
-Just wondering if there would be interest in an IoT discord chat community? IoT is very fragmented but I bet we could figure out a way to set up channels for all facets of IoT.,"No idea what discord is, but I’d be down for it if it’s something like slack or whatever. "
-Just wondering if there would be interest in an IoT discord chat community? IoT is very fragmented but I bet we could figure out a way to set up channels for all facets of IoT.,I’d be in
-Just wondering if there would be interest in an IoT discord chat community? IoT is very fragmented but I bet we could figure out a way to set up channels for all facets of IoT.,I'm interested too!
-Just wondering if there would be interest in an IoT discord chat community? IoT is very fragmented but I bet we could figure out a way to set up channels for all facets of IoT.,"Created! please go to https://discord.gg/8uP4DnH to join. spread the word. Mods, would you be interested in sticking to sidebar?"
-Build a Wireless Street Lighting System,"I must be an IoT curmeedgon but I think it’s a lot cheaper to respond to lights out calls from the public, or have city works people inspect them every once in a while. 
-
-Is this a solution in search of a problem? "
-Build a Wireless Street Lighting System,"See also
-
-https://www.urbanasolutions.net/technology
-
-specially the video on that page."
