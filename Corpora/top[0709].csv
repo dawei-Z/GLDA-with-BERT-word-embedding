@@ -1,0 +1,96 @@
+Title,Comments
+Adding voice control to any coffee pot is extremely easy!,Couldn't you just plug it into an internet controlled outlet switch? They have external inline switches or power strips for example that would produce the same result and be much simpler...
+Tried using basic CV and IOT to creat this sweet system. It waits for the user to smile and proceeds by opening the door. Views?,Nice
+Tried using basic CV and IOT to creat this sweet system. It waits for the user to smile and proceeds by opening the door. Views?,:D good job!
+Tried using basic CV and IOT to creat this sweet system. It waits for the user to smile and proceeds by opening the door. Views?,Wow that's great!
+Tried using basic CV and IOT to creat this sweet system. It waits for the user to smile and proceeds by opening the door. Views?,Happy home.
+"Ring, Nest, SimpliSafe and eight other manufacturers of internet-connected doorbell and security cameras have been alerted to ""systemic design flaws"" discovered by Florida Tech computer science student Blake Janes.",.. science student Blake Janes that allows a shared account that appears to have been removed to actually remain in place with continued access to the video feed.
+"Ring, Nest, SimpliSafe and eight other manufacturers of internet-connected doorbell and security cameras have been alerted to ""systemic design flaws"" discovered by Florida Tech computer science student Blake Janes.","Tech reporting was barely coherent. Here’s the quote from the actual paper about the vulnerability:
+
+> To illustrate this problem, researchers found that Ring doorbells failed to enforce a proper authentication scheme for multiple users that shared a single account [5]. They discovered that when a device owner changed the password, Ring did not immediately force other users to re-authenticate. Instead, users with a current session could remain connected indefinitely without having to enter the new credentials."
+How to make your own internet connected t-shirt with LEDs that respond to realtime data,I am a fairly big geek but if i'd see anyone wearing this in public i would instantly feel like a big-muscle-chad standing next to the biggest weirdo i've ever seen
+How to make your own internet connected t-shirt with LEDs that respond to realtime data,so cool!
+How to make your own internet connected t-shirt with LEDs that respond to realtime data,Hey this is pretty cool.  I could see a highschool robotics team using something like this for their team jerseys.
+When you’re quarantined and you discover your radiators have an API,Are you using Nest?
+When you’re quarantined and you discover your radiators have an API,Cool
+Raspberry Pi 4 Official USB SSD Boot (2020),"Thanks!
+Any information on the performance of a ~10 USD usb flashdrive (like the ones you linked) vs a SD card at similar pricepoint?
+
+Edit: This is the best I have found so far, but it only has data for a pretty expensive usb ssd. https://www.jeffgeerling.com/blog/2019/raspberry-pi-microsd-card-performance-comparison-2019
+
+
+https://www.bjorseth.no/blog/2019/08/media-speed-with-the-raspberry-pi-4-model-b/ concludes that usb flashdrives are about 3-4 times faster than the tested SD card, but the tested usb flashdrives cost 20-25 USD. This test does not have any data on write speeds."
+Raspberry Pi 4 Official USB SSD Boot (2020),Yes!
+"This is an iot based smart energy meter that I made it can monitor power, current, watt hour and unit energy consumed by the device connected to it and monitor it via blynk app from all over the world",I would like to build something similar. What do you need in order to build something like this?
+"This is an iot based smart energy meter that I made it can monitor power, current, watt hour and unit energy consumed by the device connected to it and monitor it via blynk app from all over the world",Great idea but can't use it for homes cause Government gets suspicious and may even file a case on you for tinkering with their meters
+A DIY weather station based on Node MCU,"Nice, I've been thinking about building a weather station with my Daughter, and then hooking up to Grafana etc...this looks great!"
+A DIY weather station based on Node MCU,That's great!
+A DIY weather station based on Node MCU,Good job
+A DIY weather station based on Node MCU,It’s incredible
+A DIY weather station based on Node MCU,Make in India?
+Are you working in IoT?,"Hi u/Mustool. I'm working on an IoT platform core which can be extended by its users. There are IoT platforms like particle.io, Wia, Blynk etc out there which target a particular aspect of IoT product development, while I'm working on to make something that is general enough for all the use cases above companies are targeting and extendible enough to be introduced in completely novel scenarios. You can check it out here: https://grandeur.tech
+Currently it looks very similar to any other platform you see out there, but we are gradually building content around its use cases on
+https://hackster.io/grandeur
+And SDKs on
+https://github.com/grandeurtech"
+Are you working in IoT?,"I do IOT for commercial buildings using SkySpark platform.  Put a gateway device into the building, setup communications with existing devices, setup analytics and web dashboards.  If you’re using a Kaiterra sensor to measure  dust I could definitely help out!  Set up your dust sensors, use their API to collect the data for analysis and display on your own dashboard."
+Are you working in IoT?,"I work for an Iot Hardware and Software vendor.  We make a range of IoT gateway/edge computing devices for Industrial and Transportation use-cases, as well as a common application framework that works across those devices, and a cloud integration platform to tie it all together.
+
+All of the core tech has been donated to the open source community and is under the Eclipse foundation umbrella.
+
+https://www.eclipse.org/kura/
+
+https://www.eclipse.org/kapua/"
+Are you working in IoT?,"Hello, we have a solution :  [https://www.sciflair.com/air-quality-monitor/](https://www.sciflair.com/air-quality-monitor/) 
+
+It has  GSM, WiFi, Ethernet, LoRa, SigFox, Mesh data transmission options. It is a self contained unit with sealed lead acid battery inside and solar powered.
+
+Hope that is helpful.
+
+Regards  
+Axino Unified IOT (axino.co)"
+Are you working in IoT?,"Hi there,
+
+We are a UK based IoT company who focus on improving business efficiency, whilst simultaneously cutting costs and reucing your carbon footprint.
+
+Check out some of the work we do at  [https://iotsystemsgroup.com/](https://iotsystemsgroup.com/)
+
+  
+If you're interested in finding out more about us, and perhaps how we can help you then feel free to get in touch!
+
+Regards,   
+IoTSG"
+Are you working in IoT?,"MyUserName, Danish government.
+
+Always keen to network."
+Are you working in IoT?,"Yes, I'm a technical and marketing content writer for a Chinese IoT company, RAKwireless.
+
+https://www.rakwireless.com/en-us"
+Are you working in IoT?,"I've worked in the IoT for about 4 years now. I work in marketing communications for an ultra-wideband positioning company, so a lot of what I do is writing blog posts, whitepapers, and web content. I've worked."
+Are you working in IoT?,Very cool and unique.  If you end up building an IOT app for construction that works you should think about monetizing it on the Procore App Marketplace here: marketplace.procore.com
+Are you working in IoT?,"I do. How can I help?    
+    
+Are you looking for specific product recommendations? Or something else?"
+Are you working in IoT?,"Hi there. Our company are using IOT technology in the manufacturing sector. We use sensors to monitor and track the performance of the machine and the output. Having the data logged and analyse, we are able to maximize yield with the highest efficiency."
+Are you working in IoT?,"Hi there!
+Spanish IoT company we make turnkey projects or help to our clients in specific task. We are hardware and software developers if you need more information you could visit us at www.sosteco.es 
+If you want better explanation of products and projects just send me a pm I will be glad to help you.
+Stay safe and regards!"
+Are you working in IoT?,"I'm with a company in Canada that specializes in sensors and IoT type technologies, including being an MVNO. For dust or particulate sensor on site, there are a number of solutions. Things like, how often do you need to do readings, what happens when a threshold is passed (ie does an alarm go off to warn workers?), and other questions would shape the type of solution that makes sense. 
+
+For vibration, and road/concrete temp, there are a number of IR sensors that measure temperature at a distance which are fairly inexpensive and quite accurate. Is this a mobile system you want to set up at different places? Is it open to the public (ie is vandalism an issues) etc are again the types of questions that differentiate a solution vs pieces of a solution."
+Are you working in IoT?,"I work as a consultant in the ICT sector (primarily strategy, business analysis, feasibility studies etc), but over the past year or so I have increasingly started working in the field of IOT. My clients are primarily in the government sector. Lately I have been dealing with integration issues, communication protocols like LoRa, Sigfox, RPMA and NBIOT.  As a side project our  team also developed an IOT platform and we were busy integrating it with BLE enabled devices (pre-covid). I’m currently getting certified in AWS."
+Are you working in IoT?,Yes.  I re-engineer startups' gadget projects so that they actually work.
+Are you working in IoT?,"I am working at a company that integrates 5G, edge computing and blockchain, focusing on the IoT market.  We provide software and also hardware to mobile network operators (mnos) and cloud service providers by putting our product in their MEC servers. Our vision is to establish an automated IoT ecosystem power by blockchain @ Edge 5G. 
+
+You can check it out here: [https://medium.com/@xeniroio/5g-mec-dlt-a-powerful-combination-xeniro-thought-leadership-series-part-1-eb7574d154fa](https://medium.com/@xeniroio/5g-mec-dlt-a-powerful-combination-xeniro-thought-leadership-series-part-1-eb7574d154fa)"
+Are you working in IoT?,"I work for a communications device company ([https://relaypro.com](https://relaypro.com)) and we're recently added an API to our product for IoT applications (voice driven sensor and other cloud data access). 
+
+Most of our customers are replacing radios and cell phones with Relay and love being able to customize their devices with smart commands like 'How many SKU 55566 do I have left?' or getting alerts when a temperature sensor crosses a threshold."
+Are you working in IoT?,"I’m an IoT solution architect and Research Fellow at a defense contractor focused on the Internet of Battlefield Things. I write code to show the art of the possible for IoT on the battlefield. Using commercial off the shelf sensors, cloud and open source technology to add sensors, edge processing, AR/VR and AI/ML to drones, vehicles, soldiers and command centers."
+Are you working in IoT?,PM sent OP!
+How IoT Could Helpful to Save Forest Asset,Some nice use cases in there. And such a worthwhile cause! It would be great to see some real-world case studies highlighting the technology described here.
+How IoT Could Helpful to Save Forest Asset,"Great stuff, nice to see this different uses for IOT."
+How IoT Could Helpful to Save Forest Asset,"Interesting use cases!
+
+This reminds me of Microsoft doing some project around Biodiversity surveys using Azure Machine Learning. [https://www.microsoft.com/en-us/research/project/accelerating-image-based-biodiversity-surveys/](https://www.microsoft.com/en-us/research/project/accelerating-image-based-biodiversity-surveys/)"

@@ -1,6 +1,7 @@
 from praw import Reddit
 from praw.models import MoreComments
 import pandas as pd
+import os
 
 
 class InstanceLogin:
@@ -9,7 +10,8 @@ class InstanceLogin:
         self.reddit = Reddit(user_agent='Comment Extraction (by /u/sgdzhou5)',
                              client_id='zanmra52bp9GSg', client_secret='jrm-DL_IxEexh8WZbi1VduOmAFk')
 
-    def extract_comment(self, forum, filter):
+
+    def extract_comment(self, forum, filter, corpora):
         """Harvest comment data from Reddit"""
         subreddit = ""
         corpus = pd.DataFrame(columns=["Title", "Comments"])
@@ -21,19 +23,22 @@ class InstanceLogin:
             subreddit = self.reddit.subreddit(forum).hot()
         for submission in subreddit:
             title = submission.title
-            print(title)
-            for top_level_comment in submission.comments:
-                if isinstance(top_level_comment, MoreComments):
-                    comments = top_level_comment.comments()
-                else:
-                    comments = [top_level_comment.body]
-                for i in comments:
-                    d = {"Title": [title], "Comments": [i]}
-                    corpus = pd.concat([corpus, pd.DataFrame(d)],
-                                       ignore_index=True)
+            if title not in corpora['Title'].values:
+                print(title)
+                for top_level_comment in submission.comments:
+                    if isinstance(top_level_comment, MoreComments):
+                        comments = top_level_comment.comments()
+                    else:
+                        comments = [top_level_comment.body]
+                    for i in comments:
+                        d = {"Title": [title], "Comments": [i]}
+                        corpus = pd.concat([corpus, pd.DataFrame(d)],
+                                           ignore_index=True)
         return corpus
 
 
+path = os.path.dirname(os.path.dirname(__file__))
 for i in ["top", "hot", "new"]:
-    corpus = InstanceLogin().extract_comment('IoT', i)
-    corpus.to_csv("{}.csv".format(i), index=False)
+    corpora = pd.read_csv(path + "/Corpora/{}.csv".format(i))
+    corpus = InstanceLogin().extract_comment('IoT', i, corpora)
+    corpus.to_csv(path + "/Corpora/{}[0709].csv".format(i), index=False)

@@ -1,0 +1,705 @@
+Title,Comments
+Build yourself a weather station using ESP32,"Sorry but this is far off from a weather station. I was actually looking forward to seeing an anemometer, a rain sensor, a light sensor, air quality sensor, etc... Maybe I was expecting too much :))"
+Weather data,nice
+Weather data,"You can fetch the data from weather forecasting websites that offer their API either for free or as a subscription.
+
+
+Something like this:
+
+
+https://openweathermap.org/api"
+Weather data,Checkout rapidAPI and also maybe collect data from a number API's to help validate
+Question: Can I get a google home assistant to ping a local webserver?,"This looks like what you need to do what you want to accomplish:
+https://github.com/actions-on-google/smart-home-local"
+Need iot solution :,"That's rather privacy invasive. That's simply not allowed in Europe. Damn, where is this? China? Do people really give their consent to this when come to study there?"
+Need iot solution :,I suspect the social issues will far outweigh the IoT ones. Plenty of asset tracking software and hardware solutions out there. The questions will be around trust and security.  You give each student a Tag.. and somehow magically they all accept it.  What about when they leave the campus?  Perhaps they still have it and can be tracked?
+Need iot solution :,"I would say it can't be done without the active cooperation of the students.  They would have to carry a device which would require charging at regular intervals, and would require them to not put the device in some sort of defeat device like a Faraday cage.  Unless you are in China, this will not go down well with students of today.  Actually, it would probably not go down well in China either, but they may well have no choice."
+Need iot solution :,Are you referring to a contact tracing solution?
+Need iot solution :,"To clarify; do you need to identify the students, or do you need the flow without necessarily identifying them?
+
+Edit; found the answer in the comments. You need to identify."
+Need iot solution :,https://purpleblob.net/
+Need iot solution :,There are a number of Chinese companies providing this technology via video cameras. Unfortunately for you they are on the US entity list now and its a felony to buy their solution.
+Need iot solution :,"You can use a combination of LoRaWAN, GPS, and WiFi positioning to do this fairly cheaply and with reasonable accuracy. Obviously this would require students to carry a small device and keep it charged but could potentially become a dual purpose 'id badge' or something.
+
+Check out this technology/project as a starting point: [https://hackaday.io/project/171223-lr1110-module-tiny-lora-wifignss-positioning](https://hackaday.io/project/171223-lr1110-module-tiny-lora-wifignss-positioning)
+
+If you needed a more polished, integrated solution developed feel free to DM me."
+Need iot solution :,"Hi, I think one of the safest options considering privacy issues, would be the use of RFID. Place RFID readers at strategic points in the school, and then you can infer the location of students based on their last RFID check-in. Other options such as BLE/GPS will infringe on their privacy rights; although GPS would not work well indoors anyways."
+Need iot solution :,[removed]
+Need iot solution :,"The cheapest solution would require the students to take some kind of action like pressing a button when they enter or exit an area. You could consider some kind of reward system to motivate them. But it would probably be unreliable. 
+
+Your actual use case would determine how reliable “location registration” needs to be. 
+
+Any automated system would need the students to carry something around with them like an RF-ID tag. 
+
+In both cases you have one or more sensors in each area that communicate with a central server.   
+
+Each student has an unique ID that the room sensor uses to call either a register or deregister function on the server. The server stores the info in a database and serves a webpage where you can search by student or show a map, etc. 
+
+There are privacy concerns to consider before the technology. It may turn out no one would accept the privacy terms, making the idea a non-starter. 
+
+Sound like an interesting project though. Good luck!"
+Need iot solution :,"Here in Norway it is very common to have employees issued an ID card with embedded RFID and mag strip. In order to open any of the doors in your office you need the card.
+
+If I was tasked with the requirements outlined by the OP (not debating if it’s legal, ethical or desirable) I would issue a card to all students (they probably already have one?..) and place readers at all doors, entrances, exits common areas etc.  
+
+You need food in the cafeteria - swipe
+You need a book - swipe
+Enter a classroom - swipe
+Etc.
+
+Use some algorithms to sort out last approximate position."
+Need iot solution :,"what do you mean by monitor the students? do you mean location tracking? Also, what level or precision do they require."
+Need iot solution :,You need LoRa + GPS
+How do I set up LoRaWAN between ESP32 and Dragino 433Mhz gateway?,"I'm not sure what your question is, but can't you just grab an MQTT client library for the ESP32 and use it in the example sketch for the gateway?"
+How do I set up LoRaWAN between ESP32 and Dragino 433Mhz gateway?,"Your Dragino LG01-P gateway(https://www.dragino.com/downloads/downloads/LoRa\_IoT\_Kit/v2-Kit/Single%20Channel%20LoRa%20IoT%20Kit%20v2%20User%20Manual\_v1.0.1.pdf) is a single-channel LoRAWAN device....but your ESP32 RHF76-052(https://docs.m5stack.com/#/en/module/lorawan) seems to be regular multi-channel LoRAWAN. I suspect that is the root of your connectivity issues.  Either get the RHF76 to just use one channel, or better yet, replace the Dragino with a normal LoRAWAN Gateway that supports the full LoRAWAN spec."
+How do I set up LoRaWAN between ESP32 and Dragino 433Mhz gateway?,"Assuming that you use LoRaWAN, LoRaWAN requires a network and an application server.
+
+You said the you want to use a private network, are you running these servers on your network?
+
+If yes did you register your device on the application server?
+
+Are you aware that in LoRaWAN, the device does not connect to the gateway but with the application server.
+
+ANY lorawan gateway (even the one owned by other people) within transmission range of your device will receive your encrypted message and forward the encrypted message to their network server (the gateway do not know the network and application keys.
+
+When you said that your device was able to receive messsages, can you explain how did you do that? was it lorawan or lora messages?"
+Security issue on Iot,"And if we knew the answers to all that, we would be millionaires and not on here ;)
+
+If you need a place to start looking for all this, you should peruse through past IOT conference presentations about security. Plenty of stuff out there about this. Look for ""IOT Security"", ""IIOT Security"", and ""IOT Data Integrity""."
+IoT Market Research Opportunity,"Hi there. Am interested as I work on IoT products, but would you be able to share more details about your research company and how you will process our data? Apologies for being paranoid. I think your audience will feel much more comfortable and confident in the survey knowing how their personal information will be used"
+Recommendation for an online simulator.,Try [TinkerCad Circuits](https://www.tinkercad.com/learn/circuits)
+How IOT device connect to secure wifi when the password is not in the code?,"There are several ways this can happen.
+
+One way is the phone uses Bluetooth to talk to the device. Another is the that the device first acts like a wifi access point, and the phone temporarily connects to it (and not the normal network) and configures the device. Once that process is done the device and the phone re-connect to the the normal wifi network.
+
+There are other ways as well, but I think those are the two most common (if the device itself is connecting to the secure network, if the device is using some sort of mesh network to talk to a hub, then the hub is connected to the wifi, that is a very different process.)"
+How IOT device connect to secure wifi when the password is not in the code?,"I also discovered while reverse engineering my drone that it communicates at both 2.4ghz and 5.8ghz WiFi depending on what it’s doing. 
+I doubt that IOT devices do this. like someone else said it’s probably just using a different communication protocol."
+What does your iot/edge computing network look like?,"Without robust update management for most IOT applications, the safest ones have inside-out security models but there aren't very many mature options on the market.  Kubernetes is out there but looks like a steep learning curve to me."
+What does your iot/edge computing network look like?,Well many opensource projects are running in IoT for edge computing
+What does your iot/edge computing network look like?,Maybe this? SkyFoundry.com
+Raspberry Pi as a cloud server for IoT,"Personally, I'm doing everything locally in Node-Red with MQTT on a Pi Zero W and programming all of my sensors and such from scratch with Arduino. I have no interest in the cloud, plus I have plenty of Raspberry Pi's and a VMWare server at home, don't need the cloud!
+
+Most people will tell you to look into Home Assistant and Tasmota. I haven't tried either of those, myself, since I'm looking to roll-my-own solution, but they're wildly popular on the Pi. 
+
+[Here's an article](https://www.electromaker.io/blog/article/9-best-raspberry-pi-smart-home-software-options) with some good choices for software to run on the Pi for IoT/Home Automation."
+Raspberry Pi as a cloud server for IoT,I use AWS GreenGrass on a RPi4.
+Raspberry Pi as a cloud server for IoT,"Have a look for sure at node red, openhab and mqtt messaging for your iot devices."
+Raspberry Pi as a cloud server for IoT,Nice! Good luck!
+ubuntu mate 18.04 remote RDP connection & ssh configuration fixed xrdp session: Login failed for display 0 in rasberry pi 3 B,Try x2go. Xrdp is just frustrating on ubuntu. I got RPI Zero worked as host but can't solve black screen issue on my mint as host after all the hours wasted on it.
+Any sensors for speed monitoring? ( speeds ~ 200-300 mm/minute),Maybe a Laser Surface Velocimeter?  These guys sell industrial grade units: [https://www.polytec.com/us/](https://www.polytec.com/us/)
+Any sensors for speed monitoring? ( speeds ~ 200-300 mm/minute),What about measuring distance and performing calculus?
+Any sensors for speed monitoring? ( speeds ~ 200-300 mm/minute),On what device? Can't you use an accelerometer then estimate the speed?
+Any sensors for speed monitoring? ( speeds ~ 200-300 mm/minute),You really need to be a lot more specific on the application and requirements if you want a good answer.
+Real Time Location Services,Or anyone had any experience with vendors?
+Real Time Location Services,"Not much to go on here....
+
+What is the time resolution?  What is the location precision?  Do you need to locate something going thousands of KPH within 1 mm within the last second? Do you need to locate something that might not even be moving within 50 feet or so within the last 5 minutes??
+
+So no beacons and no anchors....can we do a query and have ""it"" respond back with GPS readings?  Will they be within cellular phone range? Or are you tracking ocean-going containers via satellite??"
+Free Open Source AI Workshop Presented by Eclipse Foundation,Thanks for sharing
+Connection Meshlium / waspmote to Amazon IoT,"Your select FROM statement is incorrect. You must select data from the Topic your device is publishing to. What Topic do you publish on?
+
+For example, your router might be publishing on /data and if so, your Select statement would be ""Select \* from /data"" etc - if you don't know what topic you're publishing on, use the ""Test"" feature in the console and subscribe to # to see all the incoming data and that will show you the topic you need to use."
+IoT for Cattle monitoring,"Yeah, I think these people have something similar to what you're looking for: [https://halterhq.com/](https://halterhq.com/)   
+
+
+They aren't the only ones either."
+IoT for Cattle monitoring,"Here's another
+https://www.moovement.com.au/"
+IoT for Cattle monitoring,"Sodaq has the sodaq cattle tracker which works with LoRa out of the box. But it does have a solar panel... If you will be running on batteries with GPS and some kind of communication, you either will have a really low update frequency or just not a long battery life."
+IoT for Cattle monitoring,"If you have a lorawan gateway, a yuppy sensor from digital matters should work."
+IoT for Cattle monitoring,https://www.soracom.io/customers/agriculture/iot-enabled-smart-cows/
+IoT for Cattle monitoring,"We have a number of solutions including backhaul targeted at areas of the world where internet connections might not be amazing, I'd be happy to have a chat. If you're interested?
+
+Info@mockingbirdconsulting.co.uk is the best email address to use, and we can provide devices to compliment the cattle tracking as well as part of the offering such as gate monitoring and pasture moisture etc."
+Are there any good books for IOT Gateways or about IOT in general?,https://www.amazon.com/IoT-Edge-Computing-Architects-communication/dp/1839214805/ref=nodl_
+Are there any good books for IOT Gateways or about IOT in general?,"O'[Reilly.com](https://Reilly.com) has some great book and video resources that will get you up to speed quickly.  AWS, GCP, and Azure have also built out great IoT services and have documentation and tutorials available."
+Are there any good books for IOT Gateways or about IOT in general?,"General overview: https://www.edx.org/micromasters/curtinx-internet-of-things-iot
+
+Intro from O'Reilly: https://learning.oreilly.com/videos/internet-of-things/9780134667577
+
+Build your own IoT platform(there are also tons of other books): https://learning.oreilly.com/library/view/build-your-own/9781484244982/
+
+AWS IoT fundamental series: https://aws.amazon.com/tr/blogs/iot/get-started-with-the-iot-foundation-series/
+
+If you want to dig deeper, you should look at Apache and Eclipse IoT architectures."
+Are there any good books for IOT Gateways or about IOT in general?,I don't know about books but many tutorials are there
+Are there any good books for IOT Gateways or about IOT in general?,Resources are also available in google books
+Are there any good books for IOT Gateways or about IOT in general?,"I've heard the second machine age is a really good read.  If your interest is in building iot devices/working on iot projects though I highly suggest getting a raspberry pi or an Arduino and a starter kit (which will provide a veriety of sensors to learn with) and lear that way! There are so many resources online for getting started and I find one of the best way to learn is by doing. There are a variety of different cloud platforms you can use as well, I suggest looking into AWS if you want to tie a cloud solution into your project.  Amazon offers many cloud solutions for helping connect your iot device to the world wide web.  I wish you all the best in your iot journey! :)"
+LoRa vs xBee for a cheap (flood) mesh network without Internet access?,Consider using BLE 5.1. It has some impressive range and lower power consumption.
+LoRa vs xBee for a cheap (flood) mesh network without Internet access?,"There are quite a number of options for mesh networking.  And some are going to be easier to implement than others.
+
+That said they're all going to be dealing with concrete physics/information theory as limits.   https://en.wikipedia.org/wiki/Shannon–Hartley_theorem
+
+For example. On one link increasing transmit power may increase the bandwidth.  But that ""signal"" will end as ""noise"" on another link, and actually reduce the bandwidth.
+
+I would concentrate on ease of implementation over theoretical highest bandwidth.  It will be better to get something working over possibly having the best."
+Separate router for iot devices?,"Generally not. A router from twenty years ago might have trouble with that many devices , but anything made in the last ten years that isn’t a travel router (airport express first and second generation, things advertised as travel routers) should handle above 50 devices without a second thought.
+
+How much data do you think your devices are pushing? Most of the time they should be doing very little in terms of traffic, less than a modern web page.
+
+I would say, set up a separate SSID and frequency for them, just to ensure they get a good connection. People who use 2.4ghz and 5ghz with the same ssid and have devices with only a 2.4 ghz radio find the devices sometimes lose connection trying to join the 5ghz radio at the router. 
+
+Other people even set up VLANs just for the devices. Depending on what you’re doing that may be unnecessary."
+Separate router for iot devices?,No it shouldn't be an issue.
+Separate router for iot devices?,I don't think it will cause problems
+Your IoT devices may be causing your internet blackouts - my voyage of discovery,">I Googled ""can lots of IoT devices cause a modem to disconnect from the Internet?""
+
+With all due respect, you should not be giving networking advice on the internet if you can't answer questions like that for yourself.
+
+The title of your article is both hyperbolic and wrong. You discovered an overheating modem, and the limitations of router+modem combos—nothing to do with IoT devices. Your ultimate fix (strapping a fan to it), while better than nothing, is a flaky patch at best.
+
+Saying the cause was IoT is like saying the kitchen caught fire in a restaurant because the customers ordered food. And then you point a water hose at it and tell us about your “fix.”"
+How to make your own internet connected t-shirt with LEDs that respond to realtime data,I am a fairly big geek but if i'd see anyone wearing this in public i would instantly feel like a big-muscle-chad standing next to the biggest weirdo i've ever seen
+How to make your own internet connected t-shirt with LEDs that respond to realtime data,so cool!
+How to make your own internet connected t-shirt with LEDs that respond to realtime data,Hey this is pretty cool.  I could see a highschool robotics team using something like this for their team jerseys.
+Need Help - Chicken Farm Environment Monitoring,"It sounds like your solution is still quite bespoke - and given the amount of COTS sensors and transmitters you're using, it seems like it would be quite expensive.  Why not hire a decent electrical engineer and production specialist in China and just go into manufacture?  You'll spend money up front, but long term you'll actually have a product."
+Need Help - Chicken Farm Environment Monitoring,Hmmm check out Monnit’s stuff and see if they have the sensors you need.  They have some sensors that work over the ISM bands so they’re energy efficient. Those get paired to a gateway that acts as a cellular back haul.
+Need Help - Chicken Farm Environment Monitoring,"https://www.poultrysenseltd.com/
+
+Just for reference, they also weigh chicks."
+I need to implement hundreds(500+ in 12 months) of RS232 reading devices,"A Raspberry Pi 3 ([https://www.amazon.com/s?k=raspberry+pi+3&ref=nb\_sb\_noss\_1](https://www.amazon.com/s?k=raspberry+pi+3&ref=nb_sb_noss_1)) and a serial HAT ([https://www.pishop.us/product/serial-hat-rs232/](https://www.pishop.us/product/serial-hat-rs232/)), pre-configured with a Node or Python program to take the Serial data, format it to your liking, and send it out to your service.  You should be able to either find or create a custom case and it becomes a 'plug & play' black box for your customers."
+I need to implement hundreds(500+ in 12 months) of RS232 reading devices,"FWIW I think you should pursue multiple network options in parallel, but I recommend looking into cellular for your network choice. 
+
+Needing to create a plug-and-play device because there’s a NAT or a 3rd party operator install is one of the reasons people choose to go that route."
+CoAP protocol: Technical description,That's really cool! Are you planning on doing a post doing a short demo of it? It would be cool if you included the OBSERVE also!
+Anybody knows RAKwireless? They just released a new LPWAN concentrator module with SX1302.,"Yes, I have met them at multiple conferences and I own one of their previous concentrator boards."
+Platform for collecting and pushing data from and to IoT devices,Check out AWS IoT
+Platform for collecting and pushing data from and to IoT devices,"If it is a big scale project, HTTP is going to be costly overhead , use MQTT
+
+Have a look at open-source mozilla iot gateway"
+Platform for collecting and pushing data from and to IoT devices,MQTT is perfect for this.
+Platform for collecting and pushing data from and to IoT devices,"I have a similar home automation setup that I created using Django on heroku. My esp8266 devices post data to the server using http.
+
+This allows me to store the data in a database and show it in dashboards on my website.
+
+Typically Http is more resource intensive than mqtt; however, if your sensors are in deep sleep and being powered on infrequently it won't really matter"
+Platform for collecting and pushing data from and to IoT devices,"For sure when it comes to IOT, event is your friend instead of a POST on a specific endpoint.
+
+Queueing your events will isolate the production of events to their ingestion. MQTT is a well known protocol for that.
+
+Every cloud providers (and most big network providers) now have some sort of IOT platform. depends on your money and the finality of your project. Is it a home usage project ? a product to be commercialised ?
+
+You also have compagnies having already a solution out of the box where you can buy a license."
+Platform for collecting and pushing data from and to IoT devices,"If you want to stick with something nice and RESTful like HTTP, CoAP is a really nice protocol. Have also heard good stuff about IFTTT from friends in terms of something to get your data to the right places. Alternatively, something like Flask + MongoDB is super easy to set up. I can DM tutorials if you want."
+Platform for collecting and pushing data from and to IoT devices,"You can do it with MQTT, node js and mongo db for storing your data. But I will suggest you use any platform. That will be convenient. I've personally tried https://particle.io and https://grandeur.tech although Google and Amazon offer the same services but they're too difficult to configure."
+Platform for collecting and pushing data from and to IoT devices,"you can get free data and cloud usage for small quantities like this on AWS, Azure, Google cloud. No need to home brew up something custom"
+Platform for collecting and pushing data from and to IoT devices,"Sorry if this is random, but i spent a bit of time building an online endpoint to play with my devices (and send them commends).
+Feel free to use it. And pm me if you have any questions.
+http://demo.iotmicrocloud.com/"
+Platform for collecting and pushing data from and to IoT devices,You could also look at Node-RED.
+Platform for collecting and pushing data from and to IoT devices,Check if this can help [http://fadyanwar.com/index.php/2020/05/08/an-aiot-example-using-raspberry-pi-and-azure-ai/](http://fadyanwar.com/index.php/2020/05/08/an-aiot-example-using-raspberry-pi-and-azure-ai/)
+Does rain affect Lorawan signals?,"Short answer for wireless will always be yes. 
+For specifics, run your own test in target environment or look for papers (for example https://www.researchgate.net/publication/331583787_Measuring_Environmental_Effects_on_LoRa_Radios_in_Cold_Weather_Using_915_MHz p.44)."
+Does rain affect Lorawan signals?,"In South Africa we have an uncapped 4G offering called Rain LTE, and ironically it loses quality whenever it rains."
+Does rain affect Lorawan signals?,"Anything that your LoRA signal has to pass through to be received will degrade the signal.  If it has to pass through 10 rain drops, that won't be much of a signal loss.....if its a thunder storm and it has to pass through 10's of thousands of rain drops, then yeah, the signal will suffer."
+LoRa for audio,"IIRC the FCC duty cycle for that frequency is around 1%. My guess is that this application would exceed that, yes?"
+LoRa for audio,"https://www.iotsoundsensor.com/
+and its datasheet
+
+https://www.iotsoundsensor.com/wp-content/uploads/2020/03/Datasheet-Version-2.2-IoT-SoundSensor%E2%84%A2-V3.02.pdf"
+LoRa for audio,"We've tried this for our audio based device - at the compression rates required for low bandwidth transmission (<8kbps) you need to have a decently powerful processor (i.e. high end smartphone or laptop). It made it hard to do for a small cheap mobile device like ours  but if you're doing fixed point probably a lot easier. 
+
+Overall capacity of simultaneous calls will also be a challenge if you are doing more than just point to point. Happy to discuss more over DM."
+Alarm clock that can store some music and configurable by bluetooth,"If you want something simple, you could use an ESP8266 or ESP32 and an SD card MP3 player module - and connect it to WiFi. All you need to configure it would be a browser.
+
+Or you can make it complicated and use the Bluetooth of the ESP32, and create an app for Android, ios and/or Windows/Linux/Mac."
+Vibration sensor,Sounds like you need a microphone.
+Vibration sensor,I would use an esp8266 wemos and a mpu6050 break-out module.  They are cheap and easy to get working with the arduino toolchain and libraries.    Youtube has videos explaining how to use a mpu6050 with an arduino MCU.
+Vibration sensor,Have a look at petasense
+"AMAZING ARTICLE ON COVID-19 and IoT, Drones, AI, Blockchain, 5G to combat it !!!","Why the haters down voting this article?  (I'll admit that I had a negative reaction to the title, but then I read it).
+
+But this is **not** a breathless paid-by-the-word clickbait article trying to insinuate that ""IoT, Drones, AI, Blockchain, and 5G will solve COVID-19!"".
+
+This is an academic survey that simply lists ways that technology **has been used** to fight COVID-19, plus a few ways we **might** use it in the future. It's very well researched with a nice primer on COVID-19 (everyone should be forced to read), plus great diagrams walking you thru the technology."
+"AMAZING ARTICLE ON COVID-19 and IoT, Drones, AI, Blockchain, 5G to combat it !!!","How can 5G combat Covid-19 when it created it in the firstplace...?!? 
+Is this some sort of an advanced version of “fighting fire with fire” that I am too boomer to understand? /s"
+"AMAZING ARTICLE ON COVID-19 and IoT, Drones, AI, Blockchain, 5G to combat it !!!",To be honest guys I’m not convinced covid 19 will be around long enough to have any lasting effects on technology . We are about 2 riots away from it being gone all together . I honestly feel bad for all the funded projects right now that are going to come up to their second investment cycles and come up completely flat and die. *shrug*
+"AMAZING ARTICLE ON COVID-19 and IoT, Drones, AI, Blockchain, 5G to combat it !!!","An amazing read. I obviously didn't read the whole thing, it was too long. But the sections I read were quite informative. I knew that drones and robots are being used in many countries, I was amazed to find out how many countries are using even Blockchain and AI."
+Virtual IOT device,"Yes, you can.  Do you have a spare computer, or maybe a USB stick you're willing to boot from?
+
+Can you be a lot more specific about what you are trying to accomplish?
+
+I work for a corporation with resources but I also have this issue.  Resources are always fought over.  I could easily spool up tons of machines in the cloud, but the cloud bill would be astronomical.  So what I did instead was buy some de-commisioned servers available on eBay/Amazon for extraordinary low prices.  That gives me lots of cores and memory to divide up among my fake IOT devices.  I'm putting open source virtualization software on there that allows me to create many virtual machines on one server.  And then I can image and duplicate my app many times through compiled scripts or other mechanisms.  I'd show my work if I had any, this is on my to-do list to finish.
+
+Here's one example of an IOT device that can be virtualized in Linux - FreeRTOS.  It's an embedded operating system that is used in many commercial products and has a lot of integration features for the AWS IOT management environment as well as standard IOT communications features like TLS, MQTT.
+
+Many others I've seen are running Debian Linux distributions and can be virtualized easily on any hardware.
+
+One things for sure, there are plenty of vulnerabilities for you to find in your pen testing.  I'm not even trying and I find new ones weekly in the products I'm using.  It's extremely disappointing."
+Virtual IOT device,"I want to study Apes.
+
+But I don't have the time, nor the money for that. 
+
+So I've decided to do my research with [Donkey Kong](https://en.wikipedia.org/wiki/Donkey_Kong_(video_game)). **Problem solved!**
+
+&#x200B;
+
+Seriously, though, IOT is such a wide field.  There are so many different IOT operating systems out there that there is no way to list them all, let alone study them all.
+
+You should work backwards: What is it you are trying to accomplish? Help homeowners who have cheap Chinese webcams? Help enterprises buying name-brand networked thermostats?  Use first principles to narrow down the giant field of IOT to a handful of devices. Now go download their firmware, try to get them working in emulators (few are using x86, so qemu is your friend), reverse engineer them, etc.  Come up with some theoretical attacks, then buy one or two real devices and validate your hypothesis."
+Virtual IOT device,"Virtualization of IoT device could be at multiple levels. You could virtualize the hardware and sensors or you could abstract away the hardware and simply create a functional model. At IoTIFY.io we do both in terms of virtual lab and network simulator.
+
+If you are looking for something completely free, try qemu or Contiki Cooja simulator."
+Virtual IOT device,You will need to provide a little more detail. If it's software and API calls and the likes you can stub endpoints with a handful of lines of Python and Flask or FastAPI
+Virtual IOT device,"An IOT device could just be a windows machine. Perhaps running node red. This sort of thing is relatively common.  You could simulate the attack on the node Red server (not an unreasonable target).
+
+The server could checking weather and temperature via some APIs (easy to implement) and perhaps opening and closing windows , blinds etc. You could just represent those things as dashboard elements in Node red."
+Contact Tracing in the context of COVID-19,Why not use mobile phones?
+Contact Tracing in the context of COVID-19,"Something interesting for you, unfortunately I couldn't find an English source: https://vorarlberg.orf.at/stories/3043429/
+
+Basically, the product Safedi by the company Heron aims to do something similar along the lines of what you have mentioned."
+WARNING: The real issue behind 5G: Privacy + Control,"What utter garbage.... This isn't IOT related.  Reported.
+
+Oh, BTW, All of this can be done with 3G or 4G....the only thing new about 5G is network speed and throughput. Take your #FakeNews elsewhere please.
+
+\-- JD
+
+\-- FCC License: KD7SEE"
+WARNING: The real issue behind 5G: Privacy + Control,"Can't stop Technological Progress, Bro. If you can't beat 'em, join 'em. Embrace the future."
+"Ring, Nest, SimpliSafe and eight other manufacturers of internet-connected doorbell and security cameras have been alerted to ""systemic design flaws"" discovered by Florida Tech computer science student Blake Janes.",.. science student Blake Janes that allows a shared account that appears to have been removed to actually remain in place with continued access to the video feed.
+"Ring, Nest, SimpliSafe and eight other manufacturers of internet-connected doorbell and security cameras have been alerted to ""systemic design flaws"" discovered by Florida Tech computer science student Blake Janes.","Tech reporting was barely coherent. Here’s the quote from the actual paper about the vulnerability:
+
+> To illustrate this problem, researchers found that Ring doorbells failed to enforce a proper authentication scheme for multiple users that shared a single account [5]. They discovered that when a device owner changed the password, Ring did not immediately force other users to re-authenticate. Instead, users with a current session could remain connected indefinitely without having to enter the new credentials."
+A Comprehensive Guide to Start Building an IoT Product,"#### Very nice article! I'd like to mention to you the Zephyr Project, it can serve as an alternative RTOS and has some nice straights when compared with other alternatives (such as vendor support).
+
+#### Take a look, it might be worth mentioning in a future article."
+A Comprehensive Guide to Start Building an IoT Product," There is a significant rise in the demand for [Internet of Things course in Singapore](https://globalicttraining.com/internet-of-things-training-certification/) or rather worldwide. With the emergence of sensors technology and the advances in communication technologies and cloud computing, we are moving towards a new computing paradigm, which will involve trillions of connected devices – Internet of Things (IoT). IoT will transform and it requires rethinking of how we compute today."
+"I have requested to do a webinar about digitalization for manufacturing companies, what to talk about, so people don't fall asleep?",What are you selling?
+"I have requested to do a webinar about digitalization for manufacturing companies, what to talk about, so people don't fall asleep?",to keep people awake record audio from the actual machines and play that (screeching) between ppt slides
+"I have requested to do a webinar about digitalization for manufacturing companies, what to talk about, so people don't fall asleep?","I'm not too familiar with the manufacturing sector, but from my experience, if you want to ensure people are following along, you need to find a golden formula of presentation:
+
+* Have a good presentation
+* Enthusiastic without sounding like a salesman 
+* Show domain knowledge of the subject matter 
+* Don't speak to the crowd, speak to the person 
+
+The first one is really easy, but a lot of presenters just get it wrong. The introvert will make a blank powerpoint template with bullet points and monotonely iterate the bullet points whilst the extrovert will be too brief and talk so much the audience loses interest. A good presentation should have a mix of fun content and serious content. A golden rule is: Tell them what you're going to tell them, tell them, tell them what you told them. 
+
+The second one is HARD, and even after hosting numerous webinars and presentations, i still struggle with sometimes feeling like i'm selling something i'm not. So far, what's worked best is: Always smile when talking, be genuinely interested and expose your interests, ask rhetorical open-ended questions. 
+
+Third is also really important, do some research on your audience and frame your cases in ways that are relevant to them. If you have a large audience of a single sector, try throwing in some more advanced terms that they use in their daily lingo but isn't usually used by anyone else. Interest will peak! Also make sure you're confident when you talk, don't stutter, DO NOT SAY ""ehhhh"". 
+
+Lastly, make sure to use words like ""when you're"", ""for you"", and so forth. A great presentation is when the audience leaves feeling as if they've been part of the conversation. Nevermind that they haven't contributed, by framing your words as if you're talking to them you instantly build a near and personal connection. 
+
+&#x200B;
+
+I have no idea about your audience, but i tried to envision myself giving a presentation on this, and i would probably do something like this:
+
+I would start by dropping a bomb on them, blow their minds by going straight to a case where automation increased productivity and worker efficiency and happiness (no need to talk about price). Talk about how automation made positive change. 
+
+Then i would probably dive deeper into that case by talking about the specific things they did, and what other things they could do. I would also mention using cloud machine learning for predictive maintenance \[1\] and just how easy and approachable it is. 
+
+Then i would talk about what digitalization and automation means for the actual people who work there, how dashboards that are fed IoT sensor data from the cloud mean workers can check their dashboards before they go to bed or whilst sipping mojitos on the beach, how digital forms can increase worker liability safety and help with saving time and efficiency. I would talk strictly about people and not business.
+
+Then, I i would maybe focus heavily on your last point about custom solutions vs. enterprise software, how those two can not only coexist, but how custom solutions can increase the value of existing enterprise software (and even replace it altogether). How cloud collaboration tools can increase productivity and lower costs. 
+
+Then i would do the sales pitch (i assume that's why you're doing this, not just of enthusiasm?) 
+
+&#x200B;
+
+I'd love to see the webinar, feel free to DM me a link if you want  :) 
+
+\[1\] [https://max.thyssenkrupp-elevator.com/assets/pdf/TK-Elevator-MAX-Brochure\_EN.pdf](https://max.thyssenkrupp-elevator.com/assets/pdf/TK-Elevator-MAX-Brochure_EN.pdf)"
+"I have requested to do a webinar about digitalization for manufacturing companies, what to talk about, so people don't fall asleep?","The topic is pretty broad because in some sense, every IoT and software company is digitizing or automating _something_. 
+
+For IoT specifically I’d break this down into different application areas or verticals. i.e. what’s happening in smart agriculture vs. warehouses vs. manufacturing facilities vs. logistics, etc. 
+
+You’ll see everything from extremely low powered, cost effective GPS tracking to expensive autonomous robots."
+"I have requested to do a webinar about digitalization for manufacturing companies, what to talk about, so people don't fall asleep?","Jumping to the conclusion that a custom solution is always better than enterprise software could lose your audience.  There are many factors that lead to “build vs buy”.  I assume by this bullet that you work for a custom solution provider?  If this is a general discussion of what digitization for manufacturing means then I would put that bias aside and offer the audience a balanced approach to this very important question, and highlight the pros and cons. If for this customer the custom solution IS the best approach then the facts will speak for themselves and you can highlight why.   You’ll gain much more credibility and confidence from your audience with this approach."
+"I have requested to do a webinar about digitalization for manufacturing companies, what to talk about, so people don't fall asleep?","Hi I sell industrial automation equipment, focusing on digitilization for OEMs, pm me.  Interested in bouncing ideas off one another"
+"I have requested to do a webinar about digitalization for manufacturing companies, what to talk about, so people don't fall asleep?","First question will be on cost, the second will be about scale. My opinion is that there’s a huge market for change management in the manufacturing sector because you have a wide range of skills that may or may not have to do with technology. 
+
+Think about forklift drivers, labourers, and managers who only have a bit of experience using Excel (which often times they hate). How do you train and onboard the folks who don’t want their jobs to be more complex even though you’re trying to make things easier for them?"
+Home Assistant Calendar with Google Calendar and Automations,Sounds good
+[LA/DC] A new era of IoT,Is this the new season of Silicon Valley?
+[LA/DC] A new era of IoT,You want to create a new internet? Crazy talk. Prove me wrong :)
+[LA/DC] A new era of IoT,Helium?
+[LA/DC] A new era of IoT,What's the point of this post?
+Looking for interview partner to help with research,"Not sure if will be able to help, but feel free to send me a pm and we can chat. I'd be happy to help if my experience is what you are looking for."
+Looking for interview partner to help with research,You can hit me up with a PM as well.
+"Practical difference between Xbee,ble,mqtt,lorawan","I don't know much about Xbee, so won't comment on it.
+
+ - BLE and LoraWAN are wireless communication technologies that define the type of radio interfaces, frequencies, transmission power etc
+ - MQTT is a lightweight messaging protocol that defines the way data should be structured and sent from IoT devices to servers and back
+ - Frequency and transmission power are the main differences between a lot of wireless protocols.
+ - Some frequencies are free to use (915MHz, 2.4GHz, 5GHz)
+ - Most frequencies have to be licensed from the FCC for billions of $$ (600MHz, 850MHz, 1900MHz etc)
+ - When I say frequencies, I mean a range of frequencies called a band. For example, when I say 600MHz (also known as LTE band 71 and is licensed by T-Mobile), I really mean a range from 617MHz to 698MHz, which is a bandwidth of 81MHz. The fatter the bandwidth, the more data you can send on it
+ - Lower frequencies carry less data but travel farther. Higher frequencies carry more data but don't travel as far
+ - Now consider Lora, BLE and WiFI. Each technology is designed to optimize range, bandwidth and power for specific use cases
+ - Lora uses 915MHz and very low power, which gives it long range but very low bandwidth - perfect for relatively stationary IoT devices like smart meters. You can have hundreds of meters over a large area report in to a single Lora gateway
+ - BLE uses 2.4GHz and relatively low power, which means it has less range than Lora but higher bandwidth. Perfect for chattier IoT devices or hands free headsets over a relatively short distance (a few hundred feet, effectively)
+ - WiFi uses both 2.4GHz and 5GHz and lots of power, which means pretty low range but tons of bandwidth. Perfect for pushing gigabit around your house
+ - In addition to the above you have cellular companies which use an assortment of bands for various uses. Low frequency bands like 600MHz for IoT, higher frequency bands like 2600MHz for data. They use multiple bands to balance coverage, bandwidth and number of users. Cellular is a whole separate topic
+
+Hope this helps."
+"Practical difference between Xbee,ble,mqtt,lorawan","From my knowledge, it's on what/how you transmit data between devices; 
+
+BLE is Bluetooth Low Energy, pretty self-explanatory. Send data over low-energy Bluetooth.
+
+MQTT sends data over TCP/IP, so it's over LAN/Web in simpler terms. Good for quick-and-easy communication between different microcontrollers.
+
+LoRaWAN is something I've been browsing through a bit during the past week. It's a platform built over LoRa, stands for Long Range, technology. LoRaWAN is sort of a decentralized interconnected web-like infrastructure built for low-power devices to send data over long distances to a LoRa Gateway, and that gateway sending it to a processing/receiving server over the internet, and then to a destination.
+
+There are all off-the-top-of-my-head information so please feel free to correct information."
+"Practical difference between Xbee,ble,mqtt,lorawan",[deleted]
+"Practical difference between Xbee,ble,mqtt,lorawan","Well, MQTT is a protocol, and Xbee(and Zigbee), BLE, LoRAWAN (and you should include WiFi in your list) are all radio transmission technologies.
+
+Xbee/Zigbee are low-power, short-range devices used to send small amounts of data (usually <50 bytes.)  A lot of home automation devices use these.
+
+BLE (Bluetooth Low Energy) is a cut down version of Bluetooth. Low-power, short-range, small amount of data.
+
+LoRA and LoRAWAN are higher power, longer range (hence the 'Lo RA'), higher amounts of data. LoRAWAN is LoRA with IP on top (well, sort of....more to it than that really.)  If I need IoT sensors to transmit data more than 70-80 feet, I use LoRA.
+
+WiFi is the main radio technology for IoT. Everyone has it, tons of equipment options, lots of embedded boards available for custom IoT nodes. 95% of my IoT  work is done with WiFi.
+
+MQTT is the main IoT protocol used to send/receive (publish/subscribe) data. CoAP is another popular IoT protocol, but has some security issues that people have exploited. NATS is also another IoT protocol that is gaining in popularity.
+
+Hope that helps!"
+IoT platform Comparison,"A lot of these are basically the same. 
+
+Jasper is the gigantic behemoth of telco - probably does a lot of what you need but confusing/difficult to use and integrate with.  Used by tons of carriers all over the planet, including AT&T in the US. 
+
+Thingspace is Verizon’s version of Jasper but supposedly worse. But it’s Verizon so it’s more about the carrier than the dashboard. 
+
+Curiosity is with Sprint. Like Jasper but made by Ericsson and more up to date. 
+
+Honestly these are all 3rd party products/acquisitions so they’re not the carrier’s main focus.  Can check out Hologram for good out of the box tooling and connectivity: https://hologram.io/products/dashboard/"
+IoT platform Comparison,https://b2bsalescafe.files.wordpress.com/2019/09/gartner-magic-quadrant-for-industrial-iot-platforms-june-2019.pdf
+IoT platform Comparison,"Check the website IoT Analytics, company researcher from Germany do excellent job"
+IoT platform Comparison,"I'd rather suggest you putting a bit more details, as IoT platforms are quite different, for instance I saw projects using Jasper and AWS, in case you put a bit more requirements to what you need it might help to point you in right direction."
+IoT platform Comparison,Here is something a bit different which might be of interest:  [https://www.connecting-software.com/integrate-machine-data-with-business-software/](https://www.connecting-software.com/integrate-machine-data-with-business-software/)
+"Why are there 5 terminals in my phone battery? (1). The p+ and p- are 5v and ground but what is TH-, TH and ID? Also (2) is the +ve and -ve. I know few terminals are used to tell the battery temp or id but what is this here? Also how do I access/read these data with Arduino.",Ask in r/electricalengineering they got the answer for sureee
+"Why are there 5 terminals in my phone battery? (1). The p+ and p- are 5v and ground but what is TH-, TH and ID? Also (2) is the +ve and -ve. I know few terminals are used to tell the battery temp or id but what is this here? Also how do I access/read these data with Arduino.",Please ask in /r/Batteries.
+"Why are there 5 terminals in my phone battery? (1). The p+ and p- are 5v and ground but what is TH-, TH and ID? Also (2) is the +ve and -ve. I know few terminals are used to tell the battery temp or id but what is this here? Also how do I access/read these data with Arduino.",/r/Electronics may have a good pointer for you
+MQTT Protocol: Technical description,"I've been working with MQTT for about a year now and I've implemented a few systems working with MQTT.  
+I could easily follow your tutorial and I like it! Here are my thoughts about it:
+
+When I have to explain MQTT to business people at my company I usually use the analogy to the post. Think of the post distribution centre of the MQTT Broker. Someone who want's to receive post from a company would need an abo with them (subscribing). The company publishes the post. (I know they don't use the broker to generate all post but for a basic understand this might help!)
+
+One thing people get confused with is the usage of client and servers in a MQTT system. They don't understand that a client can ""send"" and ""receive"" data at the same time and that the server is just the broker. This might also be a point that you could talk about."
+Is it possible to stream videos to Google Cloud IoT Core from my raspberry pi?,"No. Google Cloud IoT Core is about publishing discrete chunks of data using a pubsub protocol via MQTT or HTTP, not about streaming video, which has very different needs. Google Cloud IoT Core is like bottled water versus a literal stream of water for video.  [Check out the documentation](https://cloud.google.com/iot/docs/concepts/overview) \- it's pretty straightforward.
+
+If you want to stream video without building the infrastructure to do it, your best bet is something like [YouTube Live](https://www.youtube.com/live) or [Twitch](https://www.twitch.tv/p/en/stream/)."
+Measuring nano amp range current consumption,"Have used the otti a bit. Have to admit it was some getting used to but fairly straight forward and relatively easy to use. 
+You can use the microcurrent with a scope to graph short times or with a good dac and an arduino to write a csv file for longer than 100ms or so"
+Measuring nano amp range current consumption,"Disclaimer: I am the creator of Joulescope
+
+Since you did not get too much of a response here, you can connect with some Joulescope users over the forum: [https://forum.joulescope.com/](https://forum.joulescope.com/)."
+Trouble connecting 3G USB Dongle to internet via raspberry pi,"Can try Hologram’s forums. They do a nice job of supporting the IoT 3G dongle community. 
+
+https://community.hologram.io/t/setup-of-huawei-msi2131i/705"
+Trouble connecting 3G USB Dongle to internet via raspberry pi,"If you run `lsusb` from a terminal, what shows up?"
+How can I detect electricity from a wire and send it to an Android device?,"If you want to do completely non-invasive I'd say use 3 photoresistors over top of the LEDs, that way you're isolated electrically from the device as well.
+
+ESP8266 or ESP32 works great for wifi connections and sending notifications via some kind of intranet/internet method.
+
+If you want to use it as a USB device then you'd probably want to use something like a Teensy that has that kind of mode."
+How can I detect electricity from a wire and send it to an Android device?,"You can redesign this right? What sort of input are we talking? AC? DC? Voltage? 
+
+Just use a ESP8266 to send a notification when a module and/or LED (if you want to keep that functionality) is active. There are plenty of ways to send notifications to Android. I used the pushbullet API a few years ago but I'm sure better ways exist."
+Computer Engineering or Computer Science for IoT?,"Either will work. I work as an IoT specialist at a larger multinational consultancy company and moist of the work is designing and building IoT platforms in the cloud. 
+Being able to tinker with devices is great for testing and prototyping, but in the end if you're not a device manufacturer, you'll be on the cloud side of IoT. Good luck!"
+Computer Engineering or Computer Science for IoT?,"ECE is where you wanna be. I'm an Electrical Engineer and I focus on IOT. Learning about databases / MQTT / cloud / etc  is really easy to do on your own time. 
+
+Comp sci isn't applied, it's theory based."
+Computer Engineering or Computer Science for IoT?,"What do you want to do? Build things and develop solutions.. It's engineering. Maybe look at the bigger picture including distributed system, ai, and potentially some business classes it's computer science.
+
+I picked computer science and have had a career in m2m and iot for 15 years and current work for arm. When employing people, we don't look for the specifics of the degree but the ability in the candidate to apply their knowledge and continue to learn."
+Computer Engineering or Computer Science for IoT?,My degree at FIU is literally for Internet of Things. Bachelors or Science in Internet of Things. So far so good!
+Computer Engineering or Computer Science for IoT?,"Lots of good answers here, both can lead to good IoT related careers. But I’d consider if you want to be on the device side (the “thing”) or the cloud (the “internet”). Device building needs computer engineers who build lower level software (firmware, drivers, OS), and the cloud needs computer scientists to write services, user experiences, distributed system problem solving, etc."
+Computer Engineering or Computer Science for IoT?," 
+
+It depends on what you want to do in IoT it's a massive field. There is a shortage of specialist hardware manufacturers specifically dedicated to 0G type devices which are used for industrial and commercial type industries.  On the platform/cloud side of things, there are 1000s of IoT platforms to choose from so this field is very well covered. The thing that keeps me up at night and motivated about IoT is the vast amount of that "" Big Data"" that is currently being collected and is yet to be mined.
+
+I'm not talking about user data like Facebook or Google. I'm referring to data that could not be collected without the help of IoT. 
+
+Things like a temperature sensor embedded in the concrete in the middle of nowhere and to see how the concrete reacts to ambient temperature fluctuations over 10 years. This is just a simple example but what new is the fact that you could roll out 1000s of these sensors and they would operate with no human interaction for years at very low cost. 
+
+So what I'm trying to say is. IoT hardware is a tool. Connectivity is a tool. A platform is a tool. Big Data is the result and analyzing this data is where to future value lays. 
+
+But like I said it depends on what you want to do and enjoy doing. 
+
+My 2c"
+Computer Engineering or Computer Science for IoT?,Hands down engineering. It's no contest.
+"So, if a person wanted to build a cheap, single-sensor, weather-proof, battery-powered, IoT device that they could throw around a farm to take a single sensor measurement (air, soil, etc.) and report back through a gateway and to the cloud... is there a module for that?",Something like this? [https://www.dragino.com/products/nb-iot/item/130-nb-iot-shield.html](https://www.dragino.com/products/nb-iot/item/130-nb-iot-shield.html)
+"So, if a person wanted to build a cheap, single-sensor, weather-proof, battery-powered, IoT device that they could throw around a farm to take a single sensor measurement (air, soil, etc.) and report back through a gateway and to the cloud... is there a module for that?",This example has a build https://hologram.io/blog/how-to-save-sheep-with-cellular-iot/
+"So, if a person wanted to build a cheap, single-sensor, weather-proof, battery-powered, IoT device that they could throw around a farm to take a single sensor measurement (air, soil, etc.) and report back through a gateway and to the cloud... is there a module for that?",There are also various dev boards around from TTGO with an ESP8266 or ESP32 and LoRa module + battery input. But the quality of those isn't going be as good I suspect as dragino or similar.
+"So, if a person wanted to build a cheap, single-sensor, weather-proof, battery-powered, IoT device that they could throw around a farm to take a single sensor measurement (air, soil, etc.) and report back through a gateway and to the cloud... is there a module for that?",Something like this? https://www.smarthomeblog.net/diy-home-automation-sensors-first-node/
+"So, if a person wanted to build a cheap, single-sensor, weather-proof, battery-powered, IoT device that they could throw around a farm to take a single sensor measurement (air, soil, etc.) and report back through a gateway and to the cloud... is there a module for that?","Have a look at [Axino](https://www.axino.co/) iot platform which offers hardware and cloud connectivity. There are mesh and lora modules which offer gateway with option of WiFi, GSM and Ethernet connectivity."
+"So, if a person wanted to build a cheap, single-sensor, weather-proof, battery-powered, IoT device that they could throw around a farm to take a single sensor measurement (air, soil, etc.) and report back through a gateway and to the cloud... is there a module for that?","This already exits, if I understand you: [zynect.com](https://zynect.com)
+
+And it's waterproof too. You can choose between wi-fi and LoRaWan - it has both."
+"So, if a person wanted to build a cheap, single-sensor, weather-proof, battery-powered, IoT device that they could throw around a farm to take a single sensor measurement (air, soil, etc.) and report back through a gateway and to the cloud... is there a module for that?","https://www.dragino.com/products/nb-iot/item/132-nb-iot-bee.html
+
+https://nimbelink.com/products/4g-lte-m-global-quectel/
+
+Are 2 for NB-IOT."
+"So, if a person wanted to build a cheap, single-sensor, weather-proof, battery-powered, IoT device that they could throw around a farm to take a single sensor measurement (air, soil, etc.) and report back through a gateway and to the cloud... is there a module for that?","Your thinking too big picture. Gotta come back down to earth a little . Is there sensors you can throw on a farm and report information? Yes. Do those sensors have the ability to connect with a gateway? Yes, you are looking for something called a “edge device.” What are you trying to report it to? The cloud isn’t a thing, it’s just a remote server. Are you trying to store this data somewhere to retrieve ? Historize? Or are you just looking for all this to be done for you? DM me and we can quote it (I’m also a EE and work with AWS, independent)"
+Are you working in IoT?,"Hi u/Mustool. I'm working on an IoT platform core which can be extended by its users. There are IoT platforms like particle.io, Wia, Blynk etc out there which target a particular aspect of IoT product development, while I'm working on to make something that is general enough for all the use cases above companies are targeting and extendible enough to be introduced in completely novel scenarios. You can check it out here: https://grandeur.tech
+Currently it looks very similar to any other platform you see out there, but we are gradually building content around its use cases on
+https://hackster.io/grandeur
+And SDKs on
+https://github.com/grandeurtech"
+Are you working in IoT?,"I do IOT for commercial buildings using SkySpark platform.  Put a gateway device into the building, setup communications with existing devices, setup analytics and web dashboards.  If you’re using a Kaiterra sensor to measure  dust I could definitely help out!  Set up your dust sensors, use their API to collect the data for analysis and display on your own dashboard."
+Are you working in IoT?,"I work for an Iot Hardware and Software vendor.  We make a range of IoT gateway/edge computing devices for Industrial and Transportation use-cases, as well as a common application framework that works across those devices, and a cloud integration platform to tie it all together.
+
+All of the core tech has been donated to the open source community and is under the Eclipse foundation umbrella.
+
+https://www.eclipse.org/kura/
+
+https://www.eclipse.org/kapua/"
+Are you working in IoT?,"Hello, we have a solution :  [https://www.sciflair.com/air-quality-monitor/](https://www.sciflair.com/air-quality-monitor/) 
+
+It has  GSM, WiFi, Ethernet, LoRa, SigFox, Mesh data transmission options. It is a self contained unit with sealed lead acid battery inside and solar powered.
+
+Hope that is helpful.
+
+Regards  
+Axino Unified IOT (axino.co)"
+Are you working in IoT?,"Hi there,
+
+We are a UK based IoT company who focus on improving business efficiency, whilst simultaneously cutting costs and reucing your carbon footprint.
+
+Check out some of the work we do at  [https://iotsystemsgroup.com/](https://iotsystemsgroup.com/)
+
+  
+If you're interested in finding out more about us, and perhaps how we can help you then feel free to get in touch!
+
+Regards,   
+IoTSG"
+Are you working in IoT?,"MyUserName, Danish government.
+
+Always keen to network."
+Are you working in IoT?,"Yes, I'm a technical and marketing content writer for a Chinese IoT company, RAKwireless.
+
+https://www.rakwireless.com/en-us"
+Are you working in IoT?,"I've worked in the IoT for about 4 years now. I work in marketing communications for an ultra-wideband positioning company, so a lot of what I do is writing blog posts, whitepapers, and web content. I've worked."
+Are you working in IoT?,Very cool and unique.  If you end up building an IOT app for construction that works you should think about monetizing it on the Procore App Marketplace here: marketplace.procore.com
+Are you working in IoT?,"I do. How can I help?    
+    
+Are you looking for specific product recommendations? Or something else?"
+Are you working in IoT?,"Hi there. Our company are using IOT technology in the manufacturing sector. We use sensors to monitor and track the performance of the machine and the output. Having the data logged and analyse, we are able to maximize yield with the highest efficiency."
+Are you working in IoT?,"Hi there!
+Spanish IoT company we make turnkey projects or help to our clients in specific task. We are hardware and software developers if you need more information you could visit us at www.sosteco.es 
+If you want better explanation of products and projects just send me a pm I will be glad to help you.
+Stay safe and regards!"
+Are you working in IoT?,"I'm with a company in Canada that specializes in sensors and IoT type technologies, including being an MVNO. For dust or particulate sensor on site, there are a number of solutions. Things like, how often do you need to do readings, what happens when a threshold is passed (ie does an alarm go off to warn workers?), and other questions would shape the type of solution that makes sense. 
+
+For vibration, and road/concrete temp, there are a number of IR sensors that measure temperature at a distance which are fairly inexpensive and quite accurate. Is this a mobile system you want to set up at different places? Is it open to the public (ie is vandalism an issues) etc are again the types of questions that differentiate a solution vs pieces of a solution."
+Are you working in IoT?,"I work as a consultant in the ICT sector (primarily strategy, business analysis, feasibility studies etc), but over the past year or so I have increasingly started working in the field of IOT. My clients are primarily in the government sector. Lately I have been dealing with integration issues, communication protocols like LoRa, Sigfox, RPMA and NBIOT.  As a side project our  team also developed an IOT platform and we were busy integrating it with BLE enabled devices (pre-covid). I’m currently getting certified in AWS."
+Are you working in IoT?,Yes.  I re-engineer startups' gadget projects so that they actually work.
+Are you working in IoT?,"I am working at a company that integrates 5G, edge computing and blockchain, focusing on the IoT market.  We provide software and also hardware to mobile network operators (mnos) and cloud service providers by putting our product in their MEC servers. Our vision is to establish an automated IoT ecosystem power by blockchain @ Edge 5G. 
+
+You can check it out here: [https://medium.com/@xeniroio/5g-mec-dlt-a-powerful-combination-xeniro-thought-leadership-series-part-1-eb7574d154fa](https://medium.com/@xeniroio/5g-mec-dlt-a-powerful-combination-xeniro-thought-leadership-series-part-1-eb7574d154fa)"
+Are you working in IoT?,"I work for a communications device company ([https://relaypro.com](https://relaypro.com)) and we're recently added an API to our product for IoT applications (voice driven sensor and other cloud data access). 
+
+Most of our customers are replacing radios and cell phones with Relay and love being able to customize their devices with smart commands like 'How many SKU 55566 do I have left?' or getting alerts when a temperature sensor crosses a threshold."
+Are you working in IoT?,"I’m an IoT solution architect and Research Fellow at a defense contractor focused on the Internet of Battlefield Things. I write code to show the art of the possible for IoT on the battlefield. Using commercial off the shelf sensors, cloud and open source technology to add sensors, edge processing, AR/VR and AI/ML to drones, vehicles, soldiers and command centers."
+Are you working in IoT?,PM sent OP!
+Plex Media Server from Home Assistant - EASY INSTALL (Video Tutorial),Thanks for sharing this!!
+Linux Foundation LF-Edge vs EdgeX Foundry vs Mozilla IoT WebThing,"The difference between LF Edge and EdgeX Foundry is simple. LF Edge is a portfolio (a collection of projects or umbrella, if you prefer) of which EdgeX Foundry is part. 
+
+**EdgeX Foundry** is a collection of IoT-focused microservices. 
+
+**Mozilla WebThings** is an implementation of the ""Web of Things"" standard from the W3C. 
+
+Neither EdgeX Foundry nor WebThings are complete IoT platforms. They are components that you can leverage in building your own.
+
+I would suggest you to have a look at the 45 open source projects available at **Eclipse IoT.** [https://iot.eclipse.org](https://iot.eclipse.org). You will find everything you need for constrained devices, edge nodes / gateways, and Cloud IoT platforms. 
+
+For example, **Eclipse ThingWeb** is a mature implementation of the ""Web of Things"" standard used by Siemens and other large IoT players.  [http://www.thingweb.io/get-involved.html](http://www.thingweb.io/get-involved.html) 
+
+**\*\*\* Full disclosure \*\*\*** I work for the Eclipse Foundation and manage their IoT and Edge Computing programs."
+IoT Use Cases of manufacturing in the Age Of Industry 4.0,"Nice sales pitch. Unfortunately almost all of it doesn't work or will not break through.
+
+Industry 4.0 (whatever that means) is being promoted for quite a while. However, use cases are mostly very specific hence expensive to implement."
+Sensor and actuators manufacturers,Do your own research
+Sensor and actuators manufacturers,Siemens
+Sensor and actuators manufacturers,"Well, it's important to know where you live, specially when talking about reputable. Have you tried Sparkfun and/or Adafruit? (I am not promoting they, dough ;)  )"
+How can this os different? How can I understand it what is the purpose it?,I'd like to help but I don't get what is the question
+LwM2M Vs MQTT without the sales pitch.,"So you have a situation where you have an investment in a proven, working technology that you've been using for a few years. And someone who you don't even have an existing relationship with comes along and says ""hey you should totally ditch what you've already built out and use this thing we're doing that most people haven't heard of or ever used"". Unless I had solicited their opinion I'm not sure I'd even bother to reply.
+
+This vendor had better have a good story about why you should abandon your existing architecture and investment for this. I would be tempted to just laugh at them and tell them not to bother me until they were able to make a serious offer that took into account my existing situation.
+
+That said, there's nothing inherently wrong with building applications over UDP. UDP simply provides a different, less reliable abstraction of the underlying network from the one that TCP provides. Any application built over it that cares about reliability will have to build its own logic, but that logic may be able to make different tradeoffs from the ones that TCP makes.
+
+Regardless, this vendor had better damned well have a compelling argument for you to waste your time with them."
+LwM2M Vs MQTT without the sales pitch.,"LwM@M is built on top of CoAP...which is also considered by most to be the next big transport of DDoS attacks, give it's UDP base.  https://www.zdnet.com/article/the-coap-protocol-is-the-next-big-thing-for-ddos-attacks"
+LwM2M Vs MQTT without the sales pitch.,"Here's an excellent article: [https://www.machnation.com/2020/04/16/lwm2m-mqtt-efficiency-tests-comparison/](https://www.machnation.com/2020/04/16/lwm2m-mqtt-efficiency-tests-comparison/)
+
+From what I recall... Pro's: lwm2m is much more efficient from a bandwidth standpoint.  This could lower your bandwidth costs and allow longer battery life. Con's: Unlike MQTT, there aren't managed cloud brokers like AWS, Azure, and Google have.  There's not an ecosystem built around these either for device management, so you have less off-the-shelf support.  If you're doing a large roll out and your devices are battery-powered, it may be well worth the investment to use LWM2m.. but if not, you may not recoup the additional investment required to complete a solution."
+LwM2M Vs MQTT without the sales pitch.,"You are comparing a protocol to an application layer. The right comparison of MQTT would be with CoAP.
+
+If your devices are low power and do not receive a lot of data back, CoAP will be a better choice. Keep in mind the payload size of CoAP will be limited to 1250 bytes, due to UDP fragmentation issues."
+IoT ideas for a family hotel,"Intelligent light does improve quality of life, there is currently experiments with different colors and intensities which are showing quite promising results with elders."
+IoT ideas for a family hotel,"Being able to do seamlessly do some do the stuff without having to install an app would be great. 
+
+The coffee machine , alarm, music, curtains etc can be orchestrated into a routine. 
+
+When the person / family gets into the room (maybe just for the first time ) a personalized welcome message can be played out via the audio system in the room. 
+
+The smart mirror in the room is an awesom idea"
+IoT ideas for a family hotel,"I like this idea a lot. If I were building a small family hotel I'd definitely be thinking about this too.
+
+Top thing to do: make a list of priorities for how the system should work and what the user experience should be like. Let this list shape your choices for what you automate and how you do it.
+
+For instance, in order of priority:
+
+1. the experience must be secure - devices in one room must not be accessible from another room. Your PoS system must be isolated from from this system. Guests in one room must not be able to observe the state of or control anything in another room.
+2. the experience must be private - suppose you put an Amazon Echo in each room so that guests could voice control the drapes. Or suppose you create your own system using something like [Mycroft](https://mycroft.ai/). Many guests will be reasonably concerned about the privacy of a device which constantly listens to them in a bedroom. You'll need an easily understandable well-written privacy policy and to design the system with privacy in mind, or at least a strong privacy statement that honestly tells them what they can expect (""We've designed this with your privacy in mind. We do not collect, store or share data about you"" - but only if that's true).
+3. The automation should supplement the way devices normally work, not replace it. For instance, if embedding a display in the bathroom mirror made the mirror not work as a mirror anymore that would be a fail and would upset your guests. Or light switches. If you used light switches which were ""smart"" but didn't function at all like the light switches your guests are familiar with, that would be frustrating to them - light switches are often the first thing guests fumble with when they enter a room; if they don't work the way they expect the guests will be upset.
+4. The learning curve should be low. Most guests won't go through much effort to figure out how to sync their phone or program a sunrise clock. An exception to this would be if you heavily market the place on its automation and tech - but if you're looking to just add some nice touches to the guest experience, the simpler and more intuitive it is for the guests, the better.
+5. Look for ways you can use information you may have access to in order to improve the overall guest experience and your ability to run the whole space. For instance you may be able to learn about what % of the time a room is actually occupied and adjust heating and cooling in it. You may be able to improve overall energy efficient of the entire hotel by looking at this. But do it with the guest's privacy in mind.
+6. Anything you do must be both maintainable \*and\* maintained. For instance, networked devices may need security updates. Things may mysteriously stop working and need to be fixed.
+
+&#x200B;
+
+If you don't do 1. and 2. you're going to find yourself on the receiving end of some very bad press before long."
+IoT ideas for a family hotel,"As someone who's helped AirBnB hosts implement IoT/smart home devices, I've learned a few things along the way (some the hard way):
+
+Others have mentioned security, but I'll take it a step further. Most smart home devices are designed with the premise that they will be used in a home setting, which has important security implications. At 15 rooms, a vanilla Google Home setup will not do. Imagine a plausible scenario: a script kiddie (or worse, a seasoned penetration tester with a skewed moral compass) checks into your hotel and notices that there's a good looking girl a few rooms down from him. He approaches her at the local bar, but gets rejected. He decides he's going to 'get back' at her my making her life absolutely miserable -- you wouldn't want vulnerabilities in your setup to be what enabled him, not just from a customer service and publicity standpoint but also from a liability one. This isn't to say you shouldn't do it, rather that you have to tread carefully and ensure that if you don't have the necessary experience in securing distributed systems, you bring someone on board who does. 
+
+Others have covered usability and privacy extensively. In addition to that, something I'd suggest doing is giving your guests an easy way to 'turn it all off'. Using the Google Home's physical mute switch as an example, some of your older or more paranoid guests may want nothing to do with the internet opening their blinds for them. Even not-so-paranoid ones might want to turn off a recording device while they're having a highly sensitive conversation. 
+
+I hope this post doesn't sound too negative. Properly done, a smart hotel can lead to a great guest experience while reducing your costs and providing you with valuable insight into guest behavior."
+IoT ideas for a family hotel,"I've always wanted to automate my own house in a way that you are proposing to do with your hotel.
+
+On top of the typical hardware items (curtains, doors, ambient lighting, furniture backlighting, faucets, showers, music, alarm, tv, thermostat, dehumidifier, air purifier, coffee machine, minibar, smart windows, smart fridges, etc...) it'd be awesome to have something like a nest smart hub or other smart panel which would allow the guest to control any of these and also order takeout or order from the hotel restaurant using the payment credentials they used to check in. It'd be even cooler if you could add other services, like uber/lyft, order spa services, etc all from that voice controlled hub. You could add robots like one to collect laundry from each room or vacuum robots to clean up spills on demand, if you could somehow automate the bed to make itself daily then you wouldnt even need to hire housekeeping staff! Lol
+
+Also, the TV channels at all hotels suck, itd be cool if you offered premium channels like ESPN redzone, or HBO, etc.. I'd say as a bare minimum all hotel TVs should reflect the streaming services that their occupants have, so Hulu, Netflix, Amazon Prime, +/-Sling..
+
+Also what if the bed transformed itself based on what the guest wanted, i.e. being able to convert between memory foam, hydromassage,  spring, etc.. idk - this sounds over-the-top lol
+
+If you wanted to make it super tech savvy, you could build out a large hall or room for VR gaming (i.e. a holodeck), and offer to rent VR gaming setups to guests, similar to but better than gaming hotels in China.
+
+If your going to have a huge outdoor campus, how about self driving golf carts to ferry people around?
+
+Lol, I know, a lot of these are crazy ideas, but I also feel like its stuff that could possibly be common within 10yrs"
+IoT ideas for a family hotel,Wifi robots can be one of the ideas. It will also raise some hype towards your hotel.
+IoT ideas for a family hotel,"Get the Honeywell inncom thermostats.  Use them to save energy use by turning off hvac and some lights when nooone is in the room.   Then you could make an app that saves a guests temperature preferences, sets it when they check in to hotel."
+IoT ideas for a family hotel,"I was pleasantly surprised when entering our room the TV had a personalized welcome message waiting for us. The room also had an Alexa, for asking about local info (I presume) which was pretty cool. Also the locks were app-controlled on our phones, so no room key or keycard.
+That stay definitely left am impression on us."
+IoT ideas for a family hotel,"As already said authentication, network design, maintenance and privacy are important considerations. 
+
+You should also make sure that each system and device that needs to be integrated has a documented and secure communication protocol (API). 
+
+Once you have the user experience defined, list out all the subsystems it includes like TV, lighting, shades, climate, concierge, property management system, etc. 
+
+Then list what functions are required of each device/system. 
+
+After that you can select devices that meet your requirements. (Watch out for gotchas like: Not all TV’s can be controlled! And many IP controllable TV’s can’t be powered on over the network.)
+
+Happy to talk more about your project if you like. Feel free to PM me."
+Looking for components to order.,"What are you trying to stock up for, any particular project? I don't buy random components any more, they usually don't get used. I just buy the right thing when I need it for a project. Although having a kit of resistors and capacitors is useful. If you're just after stuff to have in a kit ready for prototyping I'd suggest buying modules rather than components (e.g. a h-bridge driver and some dc-dc power supplies).
+
+What are you switching at 5v 6a? That's a fair bit of juice for a MOSFET, sure you can't use a relay instead?"
+Looking for components to order.,"I'd recommending looking at ""plug-in boards""
+
+This lets you buy the micro you want to work with, then add the IO board (sensor) and (transceiver).
+
+Doing everything from scratch means first validating all hardware, then working on your software.   Nothing worse than working on code for two weeks only to discover you swapped TX and RX pins.
+
+&#x200B;
+
+EDIT:
+
+These look interesting:
+
+[https://www.mouser.com/pdfDocs/Nexperia\_ssMOSFETs.pdf](https://www.mouser.com/pdfDocs/Nexperia_ssMOSFETs.pdf)
+
+You may need a series resistor to the gate (20 to 50 ohm) to limit peak current.  Nothing worse than designing something, it works, but fails after six months.   So pay attention to their application notes."
+Looking for components to order.,"One the ways to approach the daunting variety of a professional vendor or distributor's catalog is to look at the actual manufacturer part numbers in the limited selection of parts carried by hobby vendors who actually know what they are doing - eg, Adafruit, Sparkfun, etc vs the random import storefronts that just copy each other's often ill-chosen selections.
+
+That can be especially key if your needs are non-standard for the industry, for example if you want a FET that will operate well on 3v3 gate drive **and is actually a through hole part** vs most of the modern performance alternatives that are surface mount."
+[HELP] Trying to simulate a water level monitoring system.,"What do you want to simulate? The arduino code?  The complete system as a whole? 
+
+What tools do you have? 
+
+Do you have an arduino, some jumpers and a protoboard available? In this case you could pretty much ""simulate"" the whole system and by ""*mocking*"" the water sensor and other stuff (the arduino code would be pretty much the same). 
+
+PD: By ""mocking"" I mean, generate the signal your sensors would send to the arduino by any other method (a cable, another arduino etc)."
+Edge device for computer vision,"If you really want to go down the ML/AI route then the [Nvidia Jetson Nano](https://developer.nvidia.com/embedded/jetson-nano-developer-kit) is a powerful piece of kit. That's probably at the top end of your budget, and I'm sure there are some other options too."
+Edge device for computer vision,\+1 Nano.  Great platform.
+Edge device for computer vision,"You could try out a raspberry pi. They can run tensorflowLite and Yolomini
+
+Couple of examples: 
+
+
+[1](https://m.youtube.com/watch?v=npZ-8Nj1YwY)
+
+
+[2](https://towardsdatascience.com/i-built-a-diy-license-plate-reader-with-a-raspberry-pi-and-machine-learning-7e428d3c7401)
+
+
+
+Ah, missed your comment about someone grabbing the  SD card.... if that wasn’t an issue, it would be great to use one."
+"I have been finding code for this since a very long time, any kind of help or suggestion would be helpful.","I would use an accelerometer module to detect the position and the timers in the Arduino microcontroller.
+
+I have used the mpu-6050 IC which is very simple to use with arduino. You may use the millis function in Arduino for time tracking. 
+
+With these two things I think the code would be fairly not so complicated.
+
+I encourage you to make the code yourself! I seems like fun!"
+"I have been finding code for this since a very long time, any kind of help or suggestion would be helpful.",[removed]
+Best resource for IoT case studies/use cases/ projects,IOTForAll.com has a bunch of good content on various use cases etc.
+Best resource for IoT case studies/use cases/ projects,"Try these:
+
+\- SC Magazine
+
+\- CRN
+
+\-  Wired 
+
+\- Twitter (sounds like a cop-out, but it is a good real-time source of information, especially accounts like -  [https://twitter.com/TheIoT](https://twitter.com/TheIoT), [https://twitter.com/adi1391](https://twitter.com/adi1391), and  [https://twitter.com/Fox0x01](https://twitter.com/Fox0x01)) 
+
+\- HackADay (while not purely IoT related and more geared toward hackers and makers, it has solid relevant content)"
+Best resource for IoT case studies/use cases/ projects,"Try these:  
+ [https://makerfaire.com/](https://makerfaire.com/)   
+ [https://www.hackster.io/](https://www.hackster.io/)   
+ [https://www.allaboutcircuits.com/](https://www.allaboutcircuits.com/)   
+ [https://www.embedded-computing.com/](https://www.embedded-computing.com/)"
+Best resource for IoT case studies/use cases/ projects,Try community forum of Arduino
+Best resource for IoT case studies/use cases/ projects,"Check those ones, good stuff! 
+
+[https://www.iot-now.com/news/](https://www.iot-now.com/news/) 
+
+ [https://iottechnews.com/](https://iottechnews.com/) 
+
+ [https://iot.eetimes.com/](https://iot.eetimes.com/) 
+
+ [https://iotbusinessnews.com/](https://iotbusinessnews.com/)"
+Introducing a new open source IoT Stack: CroMFlaG2,Very nice
+Introducing a new open source IoT Stack: CroMFlaG2,"That's a neat stack but I don't know why anyone wants to host their own stacks, there are multiple cloud providers that make it beyond easy to connect IoT devices and whatever else you need and are completely consumption driven on price."
+Challenging schoolproject,"Whack a mole is fun and collecting data via a game seems like a good idea. 
+To keep it simple, I would just have some giant LED momentary switch buttons (arcade buttons) (with a picture of a mole printed on a transparency and taped to it!) on it. Example: Red LED Light Lamp 60mm Dia Big Round Arcade Video Game Player Push Button Switch Pack of 5 https://www.amazon.com/dp/B00Z5PHRJM/ref=cm_sw_r_cp_api_i_cf8UEbRC6YSQ3
+
+You could easily use a raspberry pi or Adriuno control lighting up the correct button and measuring how long until the button was pressed. This could then be broadcast via wifi using MQTT/Http which saves the requests. If you want to get a little more fancy, you could include a toy hammer with sensor that could record the pressure/acceleration impact of the hit as well? If you want it more complicated you could have a blue and red hammer and indicate the right hammer to use to make the game even harder. ArtCreativity Giant Squeaky Hammer, Jumbo 15 Inch Kids’ Squeaking Hammer Pounding Toy, Clown, Carnival, and Circus Birthday Party Favors, Best Gift for Boys and Girls Ages 3 Plus https://www.amazon.com/dp/B082LRQPR2/ref=cm_sw_r_cp_api_i_Ph8UEb8W20AKB
+
+Alternative approach - IoT enable this game with a microcontroller... Liberty Imports Classic Mole Whacking Reflex Electronic Arcade Game - Kids Educational Musical Learning Bilingual Toy (White) https://www.amazon.com/dp/B005SSMEP8/ref=cm_sw_r_cp_api_i_Vf8UEb68NBYSP"
+"IoT Security, Attacks And The Industrial Systems at Risk",interesting
+"i´m doing the proposal for an ""early warning system"" and i was wondering, How can i control a siren using Lorawan?","Multi-tech makes a Linux embedded gateway that we use for some projects. Slap a node-red docker on it and use that or a python script and combine the “server” path and gateway of your drawing into one leg. 
+
+Or you could use one of the TTGO esp 32 Lora devices with micro python to trigger the siren directly without needing the server leg. 
+
+Unless there is some other reason to have a “server” just the sensor and a controller should be all you need for the task. Whatever communication you use between them doesn’t really matter."
+Anyone know the name of that casino from 2017?,"The Casino knew they had a problem, as far as I remember they called in Darktrace to figure out how intel was being leaked. Darktrace could tell the story, but not who their client was.
+
+The hacker didn't get financial information, but the list of comped suites to high rollers. Casinos make something like 80% of the profits from a small group, hence why the leak was so damning as they noted high rollers weren't coming back but poached by competitors.
+
+Anyone who drops $1Million over a weekend will expect privacy. Hence the damager was just knowing the information was leaked. High rollers bailed. 
+
+I always enjoyed the humor of having Def Con at Las Vegas. One year the hotel had all information on the rooms tv coax to show what was billed to your room. The catch is was all rooms were listed in plain test. Hey, George ordered $80 room service, Sue spent $20 on a Lesbian flick, Mike...  Next year it was encrypted... hey Geoge spent... reminds time to brush up on PDP11 stuff (you never know)."
+Anyone know the name of that casino from 2017?,I dont know the name but is it the one with the hacked sensor in the fish tank
+China launches first two communications satellites for IoT project,cool
+China launches first two communications satellites for IoT project,initial pilot IoT applications in space! cool.
+Which sensors or IoT devices are best for WiFi-tracking?,"Couple of IoT related vendor options that you can look into-  
+Apptricity and Digital Matter."
+Which sensors or IoT devices are best for WiFi-tracking?,"A WiFi Pineapple (pricey) would do exactly that and then some.
+
+Also a raspberry pi with a WiFi adapter capable of monitor mode running Kali Linux would work as well. Kali comes with a bunch of network tools including Airodump-ng (shows WiFi networks and devices in the area) also any custom python script will be able to run on it."
+Which sensors or IoT devices are best for WiFi-tracking?,"Hope this will be helpful to you. **Ambient Weather WS-10-X4,**  **SensorPush**,  **Temp Stick, iHome iSS50 Smart Monitor, Govee Thermometer/Hygrometer, Lacrosse Technology 926-25106-wgb wireless monitor system set.**"

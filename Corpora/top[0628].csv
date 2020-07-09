@@ -1,0 +1,11 @@
+Title,Comments
+"This is an iot based smart energy meter that I made it can monitor power, current, watt hour and unit energy consumed by the device connected to it and monitor it via blynk app from all over the world",I would like to build something similar. What do you need in order to build something like this?
+"This is an iot based smart energy meter that I made it can monitor power, current, watt hour and unit energy consumed by the device connected to it and monitor it via blynk app from all over the world",Great idea but can't use it for homes cause Government gets suspicious and may even file a case on you for tinkering with their meters
+Raspberry Pi 4 Official USB SSD Boot (2020),"Thanks!
+Any information on the performance of a ~10 USD usb flashdrive (like the ones you linked) vs a SD card at similar pricepoint?
+
+Edit: This is the best I have found so far, but it only has data for a pretty expensive usb ssd. https://www.jeffgeerling.com/blog/2019/raspberry-pi-microsd-card-performance-comparison-2019
+
+
+https://www.bjorseth.no/blog/2019/08/media-speed-with-the-raspberry-pi-4-model-b/ concludes that usb flashdrives are about 3-4 times faster than the tested SD card, but the tested usb flashdrives cost 20-25 USD. This test does not have any data on write speeds."
+Raspberry Pi 4 Official USB SSD Boot (2020),Yes!
