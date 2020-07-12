@@ -37,8 +37,8 @@ class InstanceLogin:
         return corpus
 
 
-path = os.path.dirname(os.path.dirname(__file__))
+path = os.path.dirname(os.path.dirname(__file__)) + '/Corpora/'
 for i in ["top", "hot", "new"]:
-    corpora = pd.read_csv(path + "/Corpora/{}.csv".format(i))
+    corpora = pd.read_csv(path + "{}.csv".format(i))
     corpus = InstanceLogin().extract_comment('IoT', i, corpora)
-    corpus.to_csv(path + "/Corpora/{}[0709].csv".format(i), index=False)
+    corpus.to_csv(path + "{}[0711].csv".format(i), index=False)
